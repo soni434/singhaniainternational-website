@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+
+
+  
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    </style>
+    
+   
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-bar">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                <i class="fas fa-briefcase me-2"></i> Current Openings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                <i class="fas fa-file-upload me-2"></i> Share Your CV
+              </a>
+            </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+          
+        </li>
+        <!-- sturdfix-->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Product Heading -->
+<div class="products-heading-wrapper">
+    <h2 class="products-heading">Our Products</h2>
+  </div>
+
+  <style>
+    .products-heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 40px;
+  width: 100%;
+}
+
+.products-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+/* Decorative underline */
+.products-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Responsive font size */
+@media (max-width: 600px) {
+  .products-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .products-heading::after {
+    width: 60px;
+  }
+}  
+</style>
+ <!--Product heading end here   -->
+
+ <!-- Ferrro Alloys Heading -->
+  <div class="ferro-alloys-header">
+    <h2 class="ferro-alloys-title">Ferro Alloys</h2>
+  </div>
+  
+<style>
+.ferro-alloys-header {
+  text-align: center;
+  margin: 60px auto 40px;
+  padding: 20px;
+}
+
+.ferro-alloys-title {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 10px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.ferro-alloys-title:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .ferro-alloys-title {
+    font-size: 2rem;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+  }
+}
+</style>  
+<!-- Ferro Alloys heading ends here  -->
+
+<!-- products -->
+ <!-- product 1 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="ferro-molybdenum.jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Ferro Molybdenum</h2>
+      <p class="product-description">
+        Ferro Molybdenum is an alloy which is formed by combining Iron & Molybdenum. Ferro Moly is a hardening agent & is found in many alloy steels. Molybdenum prevents corrosion in Stainless steel and when mixed with Iron, it also hardens & strengthens into austenite. The alloy is produced by heating/melting a mixture of Molybdenum Oxide & Iron. It can be produced in an Induction/Arc furnace or by aluminothermic reaction. 
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- product 2 -->
+  <div class="product-section">
+    <div class="product-image">
+      <img src="426886175_Display of Ferro Titanium Singhaniainternational dot com.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Ferro Titanium-70</h2>
+      <p class="product-description">
+        FeTi comes from aluminothermic reduction or melted in the induction furnace method. It is produced using titanium scrap and low carbon iron scrap.
+        Steel manufacturing plants make use of FeTi alloy as stabilizers for the prevention of formation of chromium carbide at the grain boundaries. This can improve malleability in carbon steels, thereby increasing its versatility.  
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- product 3 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="605390408_Display of High Carbon Ferro Managanase Low Phosphrus singhaniainternational dot com.jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">High Carbon Ferro Manganese (Low Phos)</h2>
+      <p class="product-description">
+        The specification of high carbon ferro manganese low phosphorus are minimum 75% Mn, 6-8% C, maximum 1.5% Si, 0.2% P, and 0.04% S. This grade of ferro manganese can be used in the production of steel, welding electrodes and special kinds of stick electrodes.Bulk bags are used to pack high carbon ferro manganese low phosphorus.  
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+<!-- product 4 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="2072287559_Display of Low Carbon Ferro Chrome Nitrite.JFIF" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Low Carbon Ferro Chrome-Nitrited</h2>
+      <p class="product-description">
+        LC FeCr (Low Carbon Ferrochrome) is a ferro-alloy used to regulate the ratio of Chromium in steel production without Carbon and other unwanted ingredients. Due to high quality, it is a reliable and economical alternative instead of metallic Chromium in Superalloy production. Ferro Chrome is an alloy of chromium & iron containing 50 – 70% chromium by weight.  
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- product 5 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="926316987_Display of High Carbon Ferro Maganaese Singhaniainternational (2).jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">High Carbon Ferro Manganese</h2>
+      <p class="product-description">
+        High-carbon ferromanganese (HCFeMn) is one of the most widely used ferroalloy in the world. High-carbon ferromanganese (HC FeMn) is a manganese alloy, smelted directly from manganese ores. Its manganese content ranges from 70-80 wt% and its carbon content from 6-7 wt%. FeMn production for steelmaking alloying typically offers   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- product 6 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="1622186840_Display of Ferro Niobium Singhania International Limited.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Ferro Niobium/Ferro Columbium</h2>
+      <p class="product-description">
+        Ferro Niobium (FeNb) is an important iron-niobium alloy, with a niobium content of 60-70%.  FeNb is manufactured in an electric furnace by the aluminothermy method. It contains about 60-70% niobium. It is used in the smelting of heat resistant alloys. It is used in increasing the strength of the alloys, including manufacturing of High-Strength special Steels Low-Alloy, mainly used in automobiles, pipe fabrication   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+<!-- product 7 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="896453352_Display Final of Medium Carbon Ferro Maganese Singhania International Limited.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Medium Carbon Ferro Manganese</h2>
+      <p class="product-description">
+        Manganese addition agents are generally chosen on the basis of carbon content. Inexpensive standard ferromanganese is used when the steel is oxidized (low in carbon) or when higher residual carbon contents are allowable. As maximum steel carbons become more restricted it is necessary to switch to the more costly low-or medium carbon ferroalloys   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+
+<!-- product 8 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="656075310_Display of Ferro Phosphurus.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Ferro Phosphorus</h2>
+      <p class="product-description">
+        Ferrophosphorus is an iron-phosphorus alloy used as an alloying agent and additive to high strength low-alloy (HSLA) steels. American Elements manufactures ferrophosphorus in varying compositions and forms such as powder, plate, rod, wire, and sputtering target. We offer standard sizes and shapes in addition to manufacturing unique custom alloys which are tailored to customer requirements.   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+  <!-- product 9 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="527280216_Display of Ferro Silicon Singhania Internatinal Limited.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Ferro Silicon Calcium</h2>
+      <p class="product-description">
+        Ferro Silicon Calcium Manganese is used as a deoxidizer, desulphuriser and an alloying element in steel. Ferro Silicon Calcium Manganese can be used as a substitute for Ferro Silicon and Ferro Manganese when added to make different types of steel. Silicon and manganese have a strong affinity for oxygen, and will act as deoxidizers. Whereas Calcium acts as desulphuriser in iron and steel melt.   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+    <!-- product 10 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="706117828_Display of Ferro Ziroconium Singhania International Limited.png" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Ferro Silicon Zirconium</h2>
+      <p class="product-description">
+        Zirconium Ferro Silicon, also known as silicon zirconium, is a ferrosilicon-based alloy containing proper amounts of zirconium. It can be used as inoculant and preconditioner in gray and ductile iron. Zirconium Ferro silicon can reduce chill in areas of the casting which cool more rapidly. The application of this inoculant will refine the graphite shape in thin or heavier sections. It recommended as ladle inoculant and   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+    <!-- product 11 -->
+    <div class="product-section">
+        <div class="product-image">
+          <img src="1353031333_Display of Ferro Boron Singhania International Limited.png" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Ferro Boron</h2>
+          <p class="product-description">
+            Ferroboron is a type of ferroalloy that is made up of boron and iron, with the boron varying between 17.5% to 20%. Its CAS number is 11108–67-1. Ferroboron can improve the quenching degree and mechanical behavior of steel and in high-quality alloy steel, boron takes the place of chromium, molybdenum and nickel, and does not affect their mechanical behavior. Ferroboron is stable under   
+          </p>
+          <a href="#" class="know-more-btn">Know More</a>
+        </div>
+      </div>
+
+    <!-- product 12 -->
+    <div class="product-section">
+        <div class="product-image">
+          <img src="2098536722_Display Final of Ferro Vanadium Singhania International Limited.png" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Ferro Vanadium</h2>
+          <p class="product-description">
+            Ferro Vanadium is usually produced from Vanadium sludge (or titanium bearing magnetite ore processed to produce pig iron) & available in the range V: 50 – 85%. Ferro Vanadium acts as a universal hardener, strengthener & anti-corrosive additive for steels like High strength low alloy steel, tool steel, as well as other ferrous-based products. Ferro Vanadium is mainly produced in China. China, Russia & South Africa   
+          </p>
+          <a href="#" class="know-more-btn">Know More</a>
+        </div>
+      </div>
+
+        <!-- product 13 -->
+    <div class="product-section">
+        <div class="product-image">
+          <img src="2028661357_Display of Low Carbon Ferro Chrome Singhaniainternational_dot_com.jpg" alt="Product Image">
+        </div>
+        <div class="product-details">
+          <h2 class="product-title">Low Carbon Ferro Chrome</h2>
+          <p class="product-description">
+            Ferro Chrome is an alloy of chromium & iron containing 50 – 70% chromium by weight. Addition of chromium improves the strength and yield point of steel and reduces elongation insignificantly. The presence of Chromium in carbon steels improves their hardness and wear resistance. Ferro Chrome is made from a mixture of Chromite Ore & Iron in an electric arc furnace.  
+          </p>
+          <a href="#" class="know-more-btn">Know More</a>
+        </div>
+      </div>
+
+
+        <!-- product 14 -->
+        <div class="product-section">
+            <div class="product-image">
+              <img src="216741233_Display of Silico Manganase Singhania International Limited.jpg" alt="Product Image">
+            </div>
+            <div class="product-details">
+              <h2 class="product-title">Silico Manganese</h2>
+              <p class="product-description">
+                Silico manganese is an alloy of Iron, Silicon & Manganese. It has higher Silicon content in comparison to Ferro Manganese. Silicon reduces the solubility of carbon in manganese alloys, so carbon contents are inversely proportional to silicon content. It is a more potent deoxidizer of steel compared to Ferro manganese. Deoxidization with SiMn results in cleaner steel than using Ferro Silicon. More than half of the   
+              </p>
+              <a href="#" class="know-more-btn">Know More</a>
+            </div>
+          </div>
+<style>
+    .product-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.product-image img {
+  height:300px;
+  width:300px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.product-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.know-more-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .product-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-details {
+    max-width: 100%;
+  }
+
+  .product-description {
+    text-align: center;
+  }
+}
+
+</style>  
+
+<!-- quote area -->
+<div class="text-center p-4 bg-primary text-white rounded">
+    <h4>Need Help Choosing the Right Product?</h4>
+    <p>Talk to our experts today or request a custom quote tailored to your needs.</p>
+    <a href="quote.html" class="btn btn-light">Request a Quote</a>
+  </div>
+
+
+<!-- footer section -->
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: Address -->
+    <div class="footer-column">
+      <h5>Address</h5>
+      <p>
+        <span class="highlighted-text">Singhania International Limited</span><br>
+        C-25, Phase - 1, Focal Point<br>
+        Dhandhari Kalan, Ludhiana<br>
+        Pincode: 141010, Punjab (India)
+      </p>
+    </div>
+
+    <!-- Column 2: Get in Touch -->
+    <div class="footer-column">
+      <h5>Get in Touch</h5>
+      <p>
+        <i class="fa-solid fa-clock me-2"></i> 09:00 am - 07:30 pm<br>
+        <i class="fa-solid fa-envelope me-2"></i> info@singhaniainternational.com<br>
+        <i class="fa-solid fa-phone me-2"></i> +91-93576-81418 <br>
+        <i class="fa-solid fa-tty"></i> +91-0161-4611418, 4606917
+      </p>
+    </div>
+
+    <!-- Column 3: Social Media -->
+    <div class="footer-column">
+      <h5>Follow Us</h5>
+      <a href="https://www.facebook.com/STURDFIX" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a><br>
+      <a href="https://x.com/sturdfix" target="_blank" class="social-btn twitter-btn">
+        <i class="fab fa-twitter"></i> Twitter
+      </a><br>
+      <a href="https://www.youtube.com/@sturdfixsinghaniainternati2721" target="_blank" class="social-btn youtube-btn">
+        <i class="fab fa-youtube"></i> YouTube
+      </a><br>
+      <a href="https://www.instagram.com/sturdfix_/" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a><br>
+      <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <!-- Column 4: Quick Links -->
+    <div class="footer-column">
+      <h5>Quick Links</h5>
+      <ul class="quick-links">
+        <li><a href="all certificate.pdf"><i class="fas fa-download"></i> Downloads</a></li>
+        <li><a href="disclaimer.html"><i class="fas fa-file-alt"></i> Disclaimer</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      </ul> 
+    </div>
+    <style>
+      .quick-links {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.quick-links a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change text color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ff6f61; /* Change color on hover */
+}
+
+.quick-links i {
+  font-size: 18px; /* Set icon size */
+  color: #ff6f61; /* Set icon color */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover i {
+  color: #ff9f7f; /* Icon color change on hover */
+}
+@media (max-width: 600px) {
+  .footer-column {
+    text-align: center;
+  }
+
+  .quick-links {
+    display: inline-block;
+    text-align: left; /* Keeps items left-aligned within centered block */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .quick-links li {
+    width: 100%;
+  }
+
+  .quick-links a {
+    display: inline-flex; /* Inline to allow centering inside li if needed */
+    justify-content: flex-start; /* Align icon and text to the left */
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+    </style>
+    <!-- Column 5: Newsletter Subscription -->
+    <div class="footer-column">
+      <h5>Subscribe to our Newsletter</h5>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="subscriber-email" name="subscriber_email" placeholder="Enter your email" 
+        class="newsletter-input" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+    
+    <!-- EmailJS Script -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize EmailJS with your public key
+        emailjs.init("75FB0nHsOD4SFPb0k");
+    
+        // Handle form submission
+        document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+    
+          // Log form data to debug and ensure correct data is sent
+          const formData = new FormData(this);
+          formData.forEach((value, key) => {
+            console.log(key, value); // This logs each form field and its value
+          });
+    
+          // Send the form data to EmailJS (sendForm)
+          emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
+            .then(function (response) {
+              alert("Subscribed Successfully!"); // Success message
+              console.log("Email sent successfully:", response);
+            }, function (error) {
+              alert("Something went wrong. Please try again."); // Error message
+              console.error("Error sending email:", error);
+            });
+        });
+      });
+    </script>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Singhania International Limited. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+
+<button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollUpBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<style>
+  /* Style for the scroll to top button */
+/* Scroll to Top Button */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #28a745; /* Green background color */
+  color: white;  /* White text color */
+  border: none;  /* Remove border */
+  padding: 15px 20px; /* Add padding */
+  border-radius: 50%;  /* Make the button circular */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  z-index: 1000; /* Make sure the button stays on top */
+  display: none; /* Hidden by default */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+/* Scroll button visible when user scrolls */
+.show {
+  display: block;
+}
+
+</style>
+
+</body>
+</html>

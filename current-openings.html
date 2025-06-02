@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="icon.png" type="image/png">
+
+  
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    </style>
+    
+   
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-bar">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                  <i class="fas fa-briefcase me-2"></i> Current Openings
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                  <i class="fas fa-file-upload me-2"></i> Share Your CV
+                </a>
+              </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+        </li>
+        <!-- sturdfix-->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- career + designing -->
+<div class="container my-5">
+    <h2 class="mb-4 text-center text-uppercase">Current Openings</h2>
+  
+    <!-- Job Card Example -->
+    <div class="card mb-4 job-card">
+      <div class="card-body">
+        <h5 class="card-title">Position Required: <span class="text-primary">Software Developer</span></h5>
+        <p><strong>Current Opening ID:</strong> JD-101</p>
+        <p><strong>No of Openings:</strong> 3</p>
+        <p><strong>Location:</strong> Ludhiana</p>
+        <p><strong>Qualification Required:</strong> B.Tech / B.E. in Computer Science</p>
+        <p><strong>Job Description:</strong> Must have experience with JavaScript, React, Node.js. Familiarity with REST APIs and Git is required.</p>
+        <a href="share-cv.html" target="_blank" class="btn btn-outline-primary">Apply Now</a>
+      </div>
+    </div>
+  
+    <!-- Duplicate the block below for more job cards -->
+    <div class="card mb-4 job-card">
+      <div class="card-body">
+        <h5 class="card-title">Position Required: <span class="text-primary">Marketing Executive</span></h5>
+        <p><strong>Current Opening ID:</strong> JD-102</p>
+        <p><strong>No of Openings:</strong> 2</p>
+        <p><strong>Location:</strong> Delhi</p>
+        <p><strong>Qualification Required:</strong> MBA in Marketing</p>
+        <p><strong>Job Description:</strong> Excellent communication skills. Responsible for B2B campaigns and lead generation.</p>
+        <a href="share-cv.html" target="_blank" class="btn btn-outline-primary">Apply Now</a>
+      </div>
+    </div>
+  </div>
+    
+<style>
+    p{
+        color: black;
+    }
+.job-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #0d6efd;
+    padding: 20px;
+    transition: 0.3s;
+    color:black;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    background-color: #f8f9fa;
+  }
+  
+  .job-card .btn {
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  
+  @media (max-width: 768px) {
+    .job-card h5 {
+      font-size: 18px;
+    }
+  
+    .job-card p {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .job-card {
+      padding: 15px;
+    }
+  
+    form .form-label, .form-control, textarea {
+      font-size: 14px;
+    }
+  
+    form button {
+      width: 100%;
+    }
+  }
+
+</style>
+<!-- statistics -->
+<div class="container text-center my-5">
+  <h2>Why Work With Us?</h2>
+  <div class="row">
+    <div class="col-md-3 col-6 mb-4">
+      <h4>20+</h4>
+      <p>Years of Experience</p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <h4>300+</h4>
+      <p>Employees Worldwide</p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <h4>10000+</h4>
+      <p>Products</p>
+    </div>
+    <div class="col-md-3 col-6 mb-4">
+      <h4>750+</h4>
+      <p>Metric Tons/M</p>
+    </div>
+  </div>
+</div>
+<style>
+  .container h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.row div h4 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #0d6efd;
+}
+
+.row div p {
+  font-size: 16px;
+  color:black;
+}
+
+</style>
+
+<!-- testimonials -->
+<div class="container my-5">
+  <h2 class="text-center">Employee Testimonials</h2>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="testimonial-card p-4 border">
+        <p>"Singhania International is a great place to grow. The team is supportive and the projects are always challenging."</p>
+        <h5>- John Doe, Software Developer</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="testimonial-card p-4 border">
+        <p>"The leadership at Singhania is amazing. There's always room for creativity and growth."</p>
+        <h5>- Jane Smith, Marketing Executive</h5>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="testimonial-card p-4 border">
+        <p>"I feel valued at Singhania, and the work-life balance here is excellent."</p>
+        <h5>- Robert Brown, HR Manager</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+ 
+  .testimonial-card {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #495057;
+}
+
+.testimonial-card h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d6efd;
+}
+</style>
+
+<!-- call to action -->
+<div class="cta-banner text-center py-5">
+  <h3>Ready to Join Our Team?</h3>
+  <p>We are always looking for talented individuals to join our dynamic team. Apply now!</p>
+  <a href="share-cv.html" class="btn btn-dark">Apply Now</a>
+</div>
+<style>
+  .cta-banner {
+    background-color: dodgerblue;
+    color: white;
+    margin-top: 50px;
+}
+
+.cta-banner h3 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.cta-banner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.cta-banner .btn {
+    font-size: 18px;
+}
+
+</style>
+
+
+<!-- for view more openings -->
+<div class="hero-section">
+  <div class="hero-content">
+
+    <p>Shape the future with innovation, passion, and excellence.</p>
+    <a href="#current-openings" class="btn btn-primary">Explore more openings</a>
+  </div>
+</div>
+<style>
+  .hero-section {
+  background-image: url('background-image.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+  position: relative;
+}
+
+.hero-content {
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.hero-section .btn {
+  background-color: #0d6efd;
+  padding: 12px 25px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.hero-section .btn:hover {
+  background-color: #0048c3;
+}
+
+  </style>
+
+<!-- video section -->
+<div class="video-section">
+  <h2>Why Work With Us?</h2>
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+
+<style>
+  .video-section {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.video-section h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.video-container iframe {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+  </style>
+
+<!-- print button -->
+<div class="text-center my-4">
+  <button onclick="window.print()" class="btn print-button">
+    <i class="fas fa-print me-2"></i>Print Page
+  </button>
+</div>
+
+
+<style>
+  .print-button {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.print-button:hover {
+  background: linear-gradient(135deg, #388E3C, #1B5E20);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.print-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .print-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+  </style>
+
+
+<!-- Scroll to Top Button -->
+
+<button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollUpBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<style>
+  /* Style for the scroll to top button */
+/* Scroll to Top Button */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #28a745; /* Green background color */
+  color: white;  /* White text color */
+  border: none;  /* Remove border */
+  padding: 15px 20px; /* Add padding */
+  border-radius: 50%;  /* Make the button circular */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  z-index: 1000; /* Make sure the button stays on top */
+  display: none; /* Hidden by default */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+/* Scroll button visible when user scrolls */
+.show {
+  display: block;
+}
+
+</style>
+
+</body>
+</html>

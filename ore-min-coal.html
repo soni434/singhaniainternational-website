@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+
+
+  
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    </style>
+    
+   
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-bar">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                <i class="fas fa-briefcase me-2"></i> Current Openings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                <i class="fas fa-file-upload me-2"></i> Share Your CV
+              </a>
+            </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+          
+        </li>
+        <!-- sturdfix-->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="products-heading-wrapper">
+    <h2 class="products-heading">Our Products</h2>
+  </div>
+
+  <style>
+    .products-heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 60px 0 40px;
+  width: 100%;
+}
+
+.products-heading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2c3e50;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
+}
+
+/* Decorative underline */
+.products-heading::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+/* Responsive font size */
+@media (max-width: 600px) {
+  .products-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .products-heading::after {
+    width: 60px;
+  }
+}
+
+</style>
+<div class="ferro-alloys-header">
+    <h2 class="ferro-alloys-title">Ores Minerals Coal</h2>
+  </div>
+  
+<style>
+.ferro-alloys-header {
+  text-align: center;
+  margin: 60px auto 40px;
+  padding: 20px;
+}
+
+.ferro-alloys-title {
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 10px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: transform 0.3s ease;
+}
+
+.ferro-alloys-title:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .ferro-alloys-title {
+    font-size: 2rem;
+    padding: 8px 20px;
+    letter-spacing: 1px;
+  }
+}
+</style>
+<!-- products -->
+ <!-- product 1 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="663363598_image.jfif" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Silicon Carbide (SIC)</h2>
+      <p class="product-description">
+        Silicon carbide (SiC) is a semiconductor based material that consists of a closed packed stacking of double layers of silicon and carbon. It has an excellent thermo-mechanical property that makes it useful in a variety of electronic and optoelectronic application 
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- product 2 -->
+  <div class="product-section">
+    <div class="product-image">
+      <img src="1073910627_Carbon-Raiser.jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">CAC (Carbon Raiser)</h2>
+      <p class="product-description">
+        Carbon raiser/ carbon additive is also known as gas calcined anthracite coal (GCA) or calcined anthracite coal. The main raw material used to make Carbon raiser is unique high quality anthracite, with characteristics of low ash and low sulfur. Carbon raiser has two main uses, as a fuel or as an additive.  
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- product 3 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="505876688_download.jfif" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">ECA (Electrically Calcined anthracite)</h2>
+      <p class="product-description">
+        Electrical Calcined Anthracite(ECA) is produced under the temperature of 1240 â„ƒ in vertical shaft furnaces, mainly used in electric steel ovens, water filtering, rust removal in shipbuilding and production of carbon material.  
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+<!-- product 4 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="1831550696_CPC1.JFIF" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Calcined Petroleum Coke (CPC)</h2>
+      <p class="product-description">
+        Calcined Petroleum Coke (CPC) is used extensively as Anode in Alumina Smelters, as Soderberg's Electrode for Ferroalloy Industries, and in the manufacturing of Graphite/ Graphite Electrodes, and Thermal Paste for Ferro Alloys & allied industries in Submerged Arc Furnaces.  
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+<!-- product 5 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="547085208_Graphitized-Petroleum-Coke-(GPC).jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Graphitized Petroleum Coke (GPC)</h2>
+      <p class="product-description">
+        High purity graphitized petroleum coke is made from high quality petroleum coke under a temperature of 2500 - 3000°C. It has high fixed carbon content, low sulfur, low ash and low porosity. It can be used as Carbon raiser/carbon additive (recarburizer) to produce high quality steel, cast iron & alloy castings,   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- product 6 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="943943813_Perlite-Ore.jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Perlite Ore</h2>
+      <p class="product-description">
+        Perlite is a special volcanic glassy rock type that is created by microscopic lamellar structures or fractures of a protrusion, which is a result of cooling in petrography. Perlite is also the name given to natural volcanic rock formations of silica basis.   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+
+<!-- product 7 -->
+<div class="product-section">
+    <div class="product-image">
+      <img src="318231810_Chromite-Sand.jpg" alt="Product Image">
+    </div>
+    <div class="product-details">
+      <h2 class="product-title">Chromite-Sand</h2>
+      <p class="product-description">
+        Chromite is an Iron chromium oxide found naturally in the earth crust. It is by far the most industrially important mineral for the production of metallic chromium, used in the production of Stainless and Tool Steel   
+      </p>
+      <a href="#" class="know-more-btn">Know More</a>
+    </div>
+  </div>
+<!-- products listing finish -->
+<style>
+    .product-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-details {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.product-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 25px;
+  text-align: justify;
+}
+
+.know-more-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.know-more-btn:hover {
+  background: linear-gradient(to right, #feb47b, #ff7e5f);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive layout for small screens */
+@media (max-width: 600px) {
+  .product-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product-details {
+    max-width: 100%;
+  }
+
+  .product-description {
+    text-align: center;
+  }
+}
+
+</style>  
+<!-- quote area -->
+<div class="text-center p-4 bg-primary text-white rounded">
+    <h4>Need Help Choosing the Right Product?</h4>
+    <p>Talk to our experts today or request a custom quote tailored to your needs.</p>
+    <a href="quote.html" class="btn btn-light">Request a Quote</a>
+  </div>
+
+<!-- footer section -->
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: Address -->
+    <div class="footer-column">
+      <h5>Address</h5>
+      <p>
+        <span class="highlighted-text">Singhania International Limited</span><br>
+        C-25, Phase - 1, Focal Point<br>
+        Dhandhari Kalan, Ludhiana<br>
+        Pincode: 141010, Punjab (India)
+      </p>
+    </div>
+
+    <!-- Column 2: Get in Touch -->
+    <div class="footer-column">
+      <h5>Get in Touch</h5>
+      <p>
+      <i class="fa-solid fa-clock me-2"></i> 09:00 am - 07:30 pm<br>
+      <i class="fa-solid fa-envelope me-2"></i>
+      <a href="mailto:info@singhaniainternational.com" style="color: white; text-decoration: none;">info@singhaniainternational.com
+      </a><br>
+      <i class="fa-solid fa-phone me-2"></i>
+      <a href="tel:+919357681418" style="color: white; text-decoration: none;"> +91-93576-81418
+      </a><br>
+      <i class="fa-solid fa-tty"></i>
+      <a href="tel:+911614611418" style="color: white; text-decoration: none;"> +91-0161-4611418
+      </a>,
+      <a href="tel:+911614606917" style="color: white; text-decoration: none;">4606917
+      </a>
+      </p>
+      </div>
+
+    <!-- Column 3: Social Media -->
+    <div class="footer-column">
+      <h5>Follow Us</h5>
+      <a href="https://www.facebook.com/STURDFIX" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a><br>
+      <a href="https://x.com/sturdfix" target="_blank" class="social-btn twitter-btn">
+        <i class="fab fa-twitter"></i> Twitter
+      </a><br>
+      <a href="https://www.youtube.com/@sturdfixsinghaniainternati2721" target="_blank" class="social-btn youtube-btn">
+        <i class="fab fa-youtube"></i> YouTube
+      </a><br>
+      <a href="https://www.instagram.com/sturdfix_/" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a><br>
+      <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+    <!-- Column 4: Quick Links -->
+    <div class="footer-column">
+      <h5>Quick Links</h5>
+      <ul class="quick-links">
+        <li><a href="all certificate.pdf"><i class="fas fa-download"></i> Downloads</a></li>
+        <li><a href="disclaimer.html"><i class="fas fa-file-alt"></i> Disclaimer</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      </ul> 
+    </div>
+    <style>
+      .quick-links {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.quick-links a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change text color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ff6f61; /* Change color on hover */
+}
+
+.quick-links i {
+  font-size: 18px; /* Set icon size */
+  color: #ff6f61; /* Set icon color */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover i {
+  color: #ff9f7f; /* Icon color change on hover */
+}
+@media (max-width: 600px) {
+  .footer-column {
+    text-align: center;
+  }
+
+  .quick-links {
+    display: inline-block;
+    text-align: left; /* Keeps items left-aligned within centered block */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .quick-links li {
+    width: 100%;
+  }
+
+  .quick-links a {
+    display: inline-flex; /* Inline to allow centering inside li if needed */
+    justify-content: flex-start; /* Align icon and text to the left */
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+    </style>
+    <!-- Column 5: Newsletter Subscription -->
+    <div class="footer-column">
+      <h5>Subscribe to our Newsletter</h5>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="subscriber-email" name="subscriber_email" placeholder="Enter your email" 
+        class="newsletter-input" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+    
+    <!-- EmailJS Script -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize EmailJS with your public key
+        emailjs.init("75FB0nHsOD4SFPb0k");
+    
+        // Handle form submission
+        document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+    
+          // Log form data to debug and ensure correct data is sent
+          const formData = new FormData(this);
+          formData.forEach((value, key) => {
+            console.log(key, value); // This logs each form field and its value
+          });
+    
+          // Send the form data to EmailJS (sendForm)
+          emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
+            .then(function (response) {
+              alert("Subscribed Successfully!"); // Success message
+              console.log("Email sent successfully:", response);
+            }, function (error) {
+              alert("Something went wrong. Please try again."); // Error message
+              console.error("Error sending email:", error);
+            });
+        });
+      });
+    </script>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Singhania International Limited. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+
+<button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollUpBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<style>
+  /* Style for the scroll to top button */
+/* Scroll to Top Button */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #28a745; /* Green background color */
+  color: white;  /* White text color */
+  border: none;  /* Remove border */
+  padding: 15px 20px; /* Add padding */
+  border-radius: 50%;  /* Make the button circular */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  z-index: 1000; /* Make sure the button stays on top */
+  display: none; /* Hidden by default */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+/* Scroll button visible when user scrolls */
+.show {
+  display: block;
+}
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    </style>
+    
+   
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-bar">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                <i class="fas fa-briefcase me-2"></i> Current Openings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                <i class="fas fa-file-upload me-2"></i> Share Your CV
+              </a>
+            </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+          
+        </li>
+        <!-- sturdfix-->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Privacy & Policies -->
+<div class="privacy-policy-container">
+    <h1>Privacy Policy</h1>
+    <section class="intro">
+        <p><strong>Singhania International Limited</strong> ("we" and "us") is fully committed to protecting and safeguarding your privacy. Our <strong>Privacy Policy</strong> clearly explains how we collect, handle, and process your personal data, whether provided by you or gathered during your visit to our website.</p>
+    </section>
+
+    <section class="commitment">
+        <h2>Our Commitment to Your Privacy</h2>
+        <p>We take your privacy seriously and treat your personal data with the utmost care. In full compliance with data protection laws, we ensure that your information is safeguarded at every step. While visiting our site, we may collect personal data, but only when it is absolutely necessary.</p>
+    </section>
+
+    <section class="purpose">
+        <h2>Purpose of Data Collection</h2>
+        <p>We invite you to read this Privacy Policy carefully. It outlines the <strong>nature</strong>, <strong>extent</strong>, and <strong>purpose</strong> of collecting, processing, and utilizing your data when you use our website. By continuing to use our services, you agree to this policy.</p>
+    </section>
+
+    <section class="data-handling">
+        <h2>Data Handling Practices</h2>
+        <p>At <strong>Singhania International Limited</strong>, we operate under strict privacy guidelines, with a strong commitment to preserving the integrity of your data. We want to be transparent about the collection of personally identifiable information on our website.</p>
+        <p>We constantly review and update our privacy policy to meet changing regulations and ensure that our practices remain aligned with best practices for privacy and security. Any updates to our policy will be posted here without prior notice.</p>
+        <p>If you have any concerns or questions regarding this privacy statement, please reach out to our website coordinator at: <strong>singhaniaint@gmail.com</strong></p>
+    </section>
+
+    <section class="data-protection">
+        <h2>How We Protect Your Data</h2>
+        <ul>
+            <li><strong>Data Security:</strong> We maintain strict security protocols to protect your personal information from misuse, loss, or alteration. Your information is securely stored on our web servers behind firewalls, accessible only to authorized personnel.</li>
+            <li><strong>No Sale of Personal Data:</strong> We do not sell or share your personal data with third parties unless you have explicitly requested it, for example, for third-party offers that may interest you.</li>
+            <li><strong>Email and Communication Preferences:</strong> You are free to choose how we communicate with you. All emails and SMS communications provide you with an easy opt-out option.</li>
+        </ul>
+    </section>
+
+    <section class="conclusion">
+        <p>The measures were taken by The Company to ensure our clients' privacy is as per the following: </p>
+    </section>
+</div>
+<style>
+/* Only targets elements within the privacy policy container */
+.privacy-policy-container {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    margin: 40px auto;
+    padding: 30px;
+    width: 80%;
+    color: #333;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    border-top: 5px solid #3498db;
+}
+
+.privacy-policy-container h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.privacy-policy-container h2 {
+    color: #3498db;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+}
+
+.privacy-policy-container p,
+.privacy-policy-container ul {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-container ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.privacy-policy-container ul li {
+    margin-bottom: 10px;
+}
+
+.privacy-policy-container strong {
+    color: #2c3e50;
+    font-weight: 600;
+}
+
+.privacy-policy-container section {
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+    border-radius: 8px;
+}
+
+.privacy-policy-container section:hover {
+    background-color: #eef6ff;
+}
+
+.privacy-policy-container ul li:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .privacy-policy-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .privacy-policy-container h1 {
+        font-size: 2rem;
+    }
+
+    .privacy-policy-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .privacy-policy-container p,
+    .privacy-policy-container ul {
+        font-size: 0.95rem;
+    }
+}
+</style>
+<!-- points -->
+<div class="privacy-bullet-points">
+    <h2>Our Data Sharing & Communication Practices</h2>
+    <ul>
+      <li>
+        <i class="fas fa-share-alt"></i>
+        We don't give or sell your information to outsiders unless you’ve asked us to, so they can offer products or services that may interest you. Email offers will always come directly from us.
+      </li>
+      <li>
+        <i class="fas fa-phone-volume"></i>
+        We may contact you via post or phone with updates about our services or promotions. Email and SMS will only be sent to users who opted in.
+      </li>
+      <li>
+        <i class="fas fa-envelope-open-text"></i>
+        All our email and SMS messages include an unsubscribe option.
+      </li>
+      <li>
+        <i class="fas fa-user-secret"></i>
+        If you participate in online discussions, it’s up to you whether to display your personal email. You can opt out of showing your email when posting.
+      </li>
+      <li>
+        <i class="fas fa-shield-alt"></i>
+        We use globally accepted security standards and technology to protect your personal data from loss, misuse, or unauthorized access.
+      </li>
+    </ul>
+  </div>
+<style>
+    .privacy-bullet-points {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #fefefe;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.privacy-bullet-points h2 {
+  font-size: 24px;
+  color: #2c3e50;
+  margin-bottom: 25px;
+  border-left: 5px solid #3498db;
+  padding-left: 15px;
+}
+
+.privacy-bullet-points ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.privacy-bullet-points li {
+  background-color: #f1f9ff;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-left: 4px solid #3498db;
+  border-radius: 8px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.privacy-bullet-points li:hover {
+  background-color: #e6f2fc;
+}
+
+.privacy-bullet-points i {
+  color: #3498db;
+  font-size: 20px;
+  margin-top: 4px;
+}
+
+</style>  
+<!-- last paragraph -->
+<div class="privacy-details-section">
+    <h2>What Identifiable Data Do We Gather?</h2>
+    <p>
+      We gather data on our clients in various ways. Users may be asked to provide their name, email, postal address, postcode, gender, and date of birth to register for specific services. We may also collect data from feedback forms, search activity, and emails sent to us.
+    </p>
+  
+    <h3>What Do We Do with the Data?</h3>
+    <p>
+      We may analyze user behavior statistically to understand product interest across our site and report aggregated trends to advertisers. Personal data is never shared individually unless you consent. Email and SMS updates are only sent to those who opt in, and you can unsubscribe anytime by using the link in our emails or emailing <a href="mailto:singhaniaint@gmail.com">singhaniaint@gmail.com</a>.
+    </p>
+  
+    <h3>With Whom Do We Share the Data?</h3>
+    <p>
+      We do not sell or rent your personal information. With your permission, we may share it with select trustworthy partners. We may also share anonymous, aggregated statistics about usage patterns with advertisers.
+    </p>
+  
+    <h3>Cookies</h3>
+    <p>
+      Cookies are small text files stored on your device to help us identify returning users. These improve your experience by allowing quicker access and remembering login details. No personal data is stored in cookies. If you have questions, feel free to <a href="contact-us.html">contact us</a> — we’re happy to assist.
+    </p>
+  </div>
+<style>
+    .privacy-details-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.privacy-details-section h2,
+.privacy-details-section h3 {
+  color: #2c3e50;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  border-left: 5px solid #3498db;
+  padding-left: 12px;
+}
+
+.privacy-details-section p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.privacy-details-section a {
+  color: #3498db;
+  text-decoration: underline;
+}
+
+.privacy-details-section a:hover {
+  color: #21618c;
+  text-decoration: none;
+}
+
+</style>  
+<!-- footer section -->
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: Address -->
+    <div class="footer-column">
+      <h5>Address</h5>
+      <p>
+        <span class="highlighted-text">Singhania International Limited</span><br>
+        C-25, Phase - 1, Focal Point<br>
+        Dhandhari Kalan, Ludhiana<br>
+        Pincode: 141010, Punjab (India)
+      </p>
+    </div>
+
+    <!-- Column 2: Get in Touch -->
+    <div class="footer-column">
+      <h5>Get in Touch</h5>
+      <p>
+      <i class="fa-solid fa-clock me-2"></i> 09:00 am - 07:30 pm<br>
+      <i class="fa-solid fa-envelope me-2"></i>
+      <a href="mailto:info@singhaniainternational.com" style="color: white; text-decoration: none;">info@singhaniainternational.com
+      </a><br>
+      <i class="fa-solid fa-phone me-2"></i>
+      <a href="tel:+919357681418" style="color: white; text-decoration: none;"> +91-93576-81418
+      </a><br>
+      <i class="fa-solid fa-tty"></i>
+      <a href="tel:+911614611418" style="color: white; text-decoration: none;"> +91-0161-4611418
+      </a>,
+      <a href="tel:+911614606917" style="color: white; text-decoration: none;">4606917
+      </a>
+      </p>
+      </div>
+    <!-- Column 3: Social Media -->
+    <div class="footer-column">
+      <h5>Follow Us</h5>
+      <a href="https://www.facebook.com/STURDFIX" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a><br>
+      <a href="https://www.twitter.com" target="_blank" class="social-btn twitter-btn">
+        <i class="fab fa-twitter"></i> Twitter
+      </a><br>
+      <a href="https://www.youtube.com" target="_blank" class="social-btn youtube-btn">
+        <i class="fab fa-youtube"></i> YouTube
+      </a><br>
+      <a href="https://www.instagram.com" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a><br>
+      <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <!-- Column 4: Quick Links -->
+    <div class="footer-column">
+      <h5>Quick Links</h5>
+      <ul class="quick-links">
+        <li><a href="all certificate.pdf"><i class="fas fa-download"></i> Downloads</a></li>
+        <li><a href="disclaimer.html"><i class="fas fa-file-alt"></i> Disclaimer</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      </ul> 
+    </div>
+    <style>
+      .quick-links {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.quick-links a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change text color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ff6f61; /* Change color on hover */
+}
+
+.quick-links i {
+  font-size: 18px; /* Set icon size */
+  color: #ff6f61; /* Set icon color */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover i {
+  color: #ff9f7f; /* Icon color change on hover */
+}
+@media (max-width: 600px) {
+  .footer-column {
+    text-align: center;
+  }
+
+  .quick-links {
+    display: inline-block;
+    text-align: left; /* Keeps items left-aligned within centered block */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .quick-links li {
+    width: 100%;
+  }
+
+  .quick-links a {
+    display: inline-flex; /* Inline to allow centering inside li if needed */
+    justify-content: flex-start; /* Align icon and text to the left */
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+    </style>
+    <!-- Column 5: Newsletter Subscription -->
+    <div class="footer-column">
+        <h5>Subscribe to our Newsletter</h5>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="subscriber-email" name="subscriber_email" placeholder="Enter your email" 
+          class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+      
+      <!-- EmailJS Script -->
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Initialize EmailJS with your public key
+          emailjs.init("75FB0nHsOD4SFPb0k");
+      
+          // Handle form submission
+          document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+      
+            // Log form data to debug and ensure correct data is sent
+            const formData = new FormData(this);
+            formData.forEach((value, key) => {
+              console.log(key, value); // This logs each form field and its value
+            });
+      
+            // Send the form data to EmailJS (sendForm)
+            emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
+              .then(function (response) {
+                alert("Subscribed Successfully!"); // Success message
+                console.log("Email sent successfully:", response);
+              }, function (error) {
+                alert("Something went wrong. Please try again."); // Error message
+                console.error("Error sending email:", error);
+              });
+          });
+        });
+      </script>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Singhania International Limited. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+
+<button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollUpBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<style>
+  /* Style for the scroll to top button */
+/* Scroll to Top Button */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #28a745; /* Green background color */
+  color: white;  /* White text color */
+  border: none;  /* Remove border */
+  padding: 15px 20px; /* Add padding */
+  border-radius: 50%;  /* Make the button circular */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  z-index: 1000; /* Make sure the button stays on top */
+  display: none; /* Hidden by default */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+/* Scroll button visible when user scrolls */
+.show {
+  display: block;
+}
+
+</style>
+
+</body>
+</html>

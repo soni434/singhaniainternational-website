@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+
+
+  
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    
+  
+    </style>
+    
+   
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-bar">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                <i class="fas fa-briefcase me-2"></i> Current Openings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                <i class="fas fa-file-upload me-2"></i> Share Your CV
+              </a>
+            </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+          
+        </li>
+   
+         <!-- sturdfix-->
+         <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- management page -->
+<section id="management-section">
+  <div class="container">
+    <h2 class="about-heading-modern">Meet our Management</h2>
+    <div class="management-grid">
+      
+      <!-- Card 1 -->
+      <div class="management-card">
+        <img src="md.png" alt="Anil Kumar Singhania" class="management-img" />
+        <h3 class="management-name">Anil Kumar Singhania</h3>
+        <p class="management-role">Managing Director</p>
+        <p class="management-bio">
+          Anil Kumar Singhania is a visionary entrepreneur and the founder of Singhania International Limited. With a strong educational background in commerce and extensive knowledge of finance, he has been successfully leading the company since four decades. Throughout his career, he has demonstrated exceptional leadership skills, strategic thinking, and the ability to navigate through various challenges.Anil Kumar Singhania's entrepreneurial journey has been marked by a steadfast commitment to his vision of transforming Singhania International Limited into a major global enterprise. He possesses a forward-thinking mindset, constantly exploring innovative ideas and strategies to propel the company forward. By fostering a culture of excellence, he inspires his team to strive for continuous improvement and push the boundaries of success.Under Anil Kumar Singhania's guidance, Singhania International Limited has achieved significant milestones and established a strong market presence. He has been instrumental in building strategic partnerships, expanding the company's product portfolio, and exploring new avenues for growth. His ability to identify emerging trends and capitalize on market opportunities has enabled the company to stay ahead of the competition.Beyond his role as Managing Director, Anil Kumar Singhania is known for his philanthropic contribution and commitment to corporate social responsibility. He believes in giving back to society and actively supports initiatives related to education, healthcare, and environmental sustainability. Through his leadership, Singhania International Limited has embraced sustainable practices, making a positive impact on both the business and the community
+        </p>
+        <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="management-card">
+        <img src="ed.png" alt="Anshul Singhania" class="management-img" />
+        <h3 class="management-name">Anshul Singhania</h3>
+        <p class="management-role">Executive Director</p>
+        <p class="management-bio">
+          Anshul Singhania is an ambitious and self-driven individual, holding the position of Director at Singhania International Limited, a leading fastener company. With an Engineering degree from Dubai BITS Pilani and a Master's degree from the prestigious London School of Economics, he brings a unique blend of technical expertise and business acumen to his role. His ability to think beyond the conventional boundaries and strive for greatness has set him apart as a visionary leader.With relentless work ethics and dedication he exemplifies the value of hard work and is willing to go  extra mile to accomplish extra ordinary feats. His commitment to the company's vision is evident in his hands-on approach, as he is actively involved in all aspects of the business, from strategy development to operational execution. His knack to identify emerging trends and adapt quickly to market demands has ensured the company to stay ahead of competition. By leveraging his engineering background, he brings a unique perspective to the fastener industry, implementing innovative solutions and driving continuous improvement.A very gentle and pragmatic person, who very well recognizes the importance of giving back to society hence actively supports initiatives related to education, social welfare, and community development. As Director, he remains focused on driving innovation, expanding market reach, and solidifying the company's position as a leader in the fastener industry. With his persistent hard work, visionary thinking and commitment to excellence, Anshual Singhania continues to lead Singhania International Limited towards new horizons.
+        </p>
+        <a href="https://www.linkedin.com/in/anshul-s/" target="_blank" class="social-btn linkedin-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- vision & values -->
+<section class="vision-values-split">
+  <div class="container">
+    <div class="vision-values-grid">
+
+      <!-- Left Column -->
+      <div class="vision-text">
+        <h2>Our Vision & Mission</h2>
+        <p><strong>Vision:</strong> To be a global leader in fastener solutions, driven by innovation and integrity.</p>
+        <p><strong>Mission:</strong> Deliver world-class products while creating a sustainable and inclusive future.</p>
+      </div>
+
+      <!-- Right Column -->
+      <div class="core-values-grid">
+        <h3>Core Values</h3>
+        <div class="value-item">
+          <span class="value-icon">💡</span>
+          <p>Innovation</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">🤝</span>
+          <p>Integrity</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">🎯</span>
+          <p>Customer Focus</p>
+        </div>
+        <div class="value-item">
+          <span class="value-icon">🌿</span>
+          <p>Sustainability</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- leadership message -->
+<section class="leadership-philosophy">
+  <div class="container">
+    <h2>Our Leadership Philosophy</h2>
+    <p class="philosophy-quote">
+      “Leadership is not about titles or power, it’s about vision, values, and the courage to guide others toward a better future.”
+    </p>
+    <p class="philosophy-author">— Anil Kumar Singhania, Managing Director</p>
+  </div>
+</section>
+
+<!-- social link
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/anshul-s/" target="_blank">LinkedIn</a>
+  
+</div><br> -->
+
+<!-- Team Contact / Call to Action -->
+<section class="leadership-contact">
+  <div class="container">
+    <h2>Connect With Our Leadership</h2>
+    <p>If you’re interested in partnerships, business opportunities, or just want to say hello — we’d love to hear from you.</p>
+    <a href="contact-us.html" target="_blank" class="contact-btn">Contact Us</a>
+  </div>
+</section>
+
+<!-- print button -->
+<div class="text-center my-4">
+  <button onclick="window.print()" class="btn print-button">
+    <i class="fas fa-print me-2"></i>Print Page
+  </button>
+</div>
+
+
+<style>
+  .print-button {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.print-button:hover {
+  background: linear-gradient(135deg, #388E3C, #1B5E20);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.print-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .print-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+  </style>
+
+<!-- footer section -->
+
+<footer class="custom-footer">
+  <div class="footer-container">
+    
+    <!-- Column 1: Address -->
+    <div class="footer-column">
+      <h5>Address</h5>
+      <p>
+        <span class="highlighted-text">Singhania International Limited</span><br>
+        C-25, Phase - 1, Focal Point<br>
+        Dhandhari Kalan, Ludhiana<br>
+        Pincode: 141010, Punjab (India)
+      </p>
+    </div>
+
+    <!-- Column 2: Get in Touch -->
+    <div class="footer-column">
+      <h5>Get in Touch</h5>
+      <p>
+      <i class="fa-solid fa-clock me-2"></i> 09:00 am - 07:30 pm<br>
+      <i class="fa-solid fa-envelope me-2"></i>
+      <a href="mailto:info@singhaniainternational.com" style="color: white; text-decoration: none;">info@singhaniainternational.com
+      </a><br>
+      <i class="fa-solid fa-phone me-2"></i>
+      <a href="tel:+919357681418" style="color: white; text-decoration: none;"> +91-93576-81418
+      </a><br>
+      <i class="fa-solid fa-tty"></i>
+      <a href="tel:+911614611418" style="color: white; text-decoration: none;"> +91-0161-4611418
+      </a>,
+      <a href="tel:+911614606917" style="color: white; text-decoration: none;">4606917
+      </a>
+      </p>
+      </div>
+
+    <!-- Column 3: Social Media -->
+    <div class="footer-column">
+      <h5>Follow Us</h5>
+      <a href="https://www.facebook.com/STURDFIX" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a><br>
+      <a href="https://x.com/sturdfix" target="_blank" class="social-btn twitter-btn">
+        <i class="fab fa-twitter"></i> Twitter
+      </a><br>
+      <a href="https://www.youtube.com/@sturdfixsinghaniainternati2721" target="_blank" class="social-btn youtube-btn">
+        <i class="fab fa-youtube"></i> YouTube
+      </a><br>
+      <a href="https://www.instagram.com/sturdfix_/" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a><br>
+      <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <!-- Column 4: Quick Links -->
+    <div class="footer-column">
+      <h5>Quick Links</h5>
+      <ul class="quick-links">
+        <li><a href="all certificate.pdf"><i class="fas fa-download"></i> Downloads</a></li>
+        <li><a href="disclaimer.html"><i class="fas fa-file-alt"></i> Disclaimer</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      </ul> 
+    </div>
+    <style>
+      .quick-links {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.quick-links a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change text color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ff6f61; /* Change color on hover */
+}
+
+.quick-links i {
+  font-size: 18px; /* Set icon size */
+  color: #ff6f61; /* Set icon color */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover i {
+  color: #ff9f7f; /* Icon color change on hover */
+}
+@media (max-width: 600px) {
+  .footer-column {
+    text-align: center;
+  }
+
+  .quick-links {
+    display: inline-block;
+    text-align: left; /* Keeps items left-aligned within centered block */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .quick-links li {
+    width: 100%;
+  }
+
+  .quick-links a {
+    display: inline-flex; /* Inline to allow centering inside li if needed */
+    justify-content: flex-start; /* Align icon and text to the left */
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+    </style>
+
+    <!-- Column 5: Newsletter Subscription -->
+    <div class="footer-column">
+      <h5>Subscribe to our Newsletter</h5>
+  <form id="newsletter-form" class="newsletter-form">
+    <input type="email" id="subscriber-email" name="subscriber_email" placeholder="Enter your email" 
+    class="newsletter-input" required>
+    <button type="submit" class="newsletter-btn">Subscribe</button>
+  </form>
+</div>
+
+<!-- EmailJS Script -->
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Initialize EmailJS with your public key
+    emailjs.init("75FB0nHsOD4SFPb0k");
+
+    // Handle form submission
+    document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      // Log form data to debug and ensure correct data is sent
+      const formData = new FormData(this);
+      formData.forEach((value, key) => {
+        console.log(key, value); // This logs each form field and its value
+      });
+
+      // Send the form data to EmailJS (sendForm)
+      emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
+        .then(function (response) {
+          alert("Subscribed Successfully!"); // Success message
+          console.log("Email sent successfully:", response);
+        }, function (error) {
+          alert("Something went wrong. Please try again."); // Error message
+          console.error("Error sending email:", error);
+        });
+    });
+  });
+</script>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Singhania International Limited. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+
+<button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollUpBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<style>
+  /* Style for the scroll to top button */
+/* Scroll to Top Button */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #28a745; /* Green background color */
+  color: white;  /* White text color */
+  border: none;  /* Remove border */
+  padding: 15px 20px; /* Add padding */
+  border-radius: 50%;  /* Make the button circular */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  z-index: 1000; /* Make sure the button stays on top */
+  display: none; /* Hidden by default */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+/* Scroll button visible when user scrolls */
+.show {
+  display: block;
+}
+
+</style>
+
+</body>
+</html>

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+
+
+  
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    </style>
+    <style>
+      #nav-barr{
+        background-color: dodgerblue;
+       margin-top: -9px;
+      }
+    
+      /* Reset navbar spacing */
+#nav-barr,
+.navbar,
+.navbar-collapse,
+.navbar-nav {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.navbar-nav > li {
+  margin-bottom: 0;
+}
+
+/* Prevent dropdown content from increasing navbar height */
+.navbar .dropdown-menu {
+  margin-top: 0;
+}
+
+/* Normalize font size & spacing */
+.navbar-nav .nav-link {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  line-height: 1.5;
+}
+
+/* Optional: shrink overall navbar height slightly */
+.navbar {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+/* Prevent wrapping of form on small screens */
+@media (max-width: 768px) {
+  .navbar form {
+    margin-top: 10px;
+  }
+}
+
+    </style>
+   
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-barr">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                <i class="fas fa-briefcase me-2"></i> Current Openings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                <i class="fas fa-file-upload me-2"></i> Share Your CV
+              </a>
+            </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+          
+        </li>
+        <!-- sturdfix-->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Quality Control -->
+ <!-- Quality Quote Section -->
+<div class="quality-quote-container">
+    <blockquote class="quality-quote">
+        “Quality means doing it right, when no one is looking.”<br>
+        <span>- Henry Ford</span>
+    </blockquote>
+</div>
+<style>
+    /* Quote Styling */
+.quality-quote-container {
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.quality-quote {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #444;
+    border-left: 5px solid #ff7e5f;
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.quality-quote span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #888;
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+    .quality-quote {
+        font-size: 1.2rem;
+        padding: 15px 20px;
+    }
+
+    .quality-quote span {
+        font-size: 0.95rem;
+    }
+}
+
+    </style>
+    <style>
+        #qc{
+            color:darkgreen;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            
+        }
+    </style>
+<div class="quality-control-container">
+    <h1 class="quality-control-header" id="qc">Quality Control at Singhania International</h1>
+    
+    <!-- Introduction Section -->
+    <section class="qc-introduction">
+        <p>
+            Our quality control process is systematic and concrete, involving several trained professionals and modern tools & equipment. Every employee is responsible for the quality of his work. To reach our quality objectives, the abilities and knowledge of all the employees are developed further. The whole process ensures that our products & procedures adhere to international standards of quality & safety. Our commitment to excellence and passion for quality products has earned us the ISO 9001:2008 certification by TUV, Nord.
+        </p>
+    </section>
+
+    <div class="lab-section">
+        <h2 class="lab-heading">Our Ultramodern Laboratory</h2>
+        <p class="lab-description">
+            An ultramodern laboratory with calibrated test equipment is in place. Our laboratory is equipped with:
+        </p>
+        <div class="lab-grid">
+            <div class="lab-item">Sample Cutting & Polishing Machine</div>
+            <div class="lab-item">Spectrometer</div>
+            <div class="lab-item">Metallurgical Microscope with Image Analyzing Software</div>
+            <div class="lab-item">Computerized Electro Hydraulic Universal Testing Machine (1000KN)</div>
+            <div class="lab-item">Rockwell Hardness Tester</div>
+            <div class="lab-item">Chemical Testing Facility</div>
+            <div class="lab-item">Compression Testing Facility</div>
+            <div class="lab-item">Bend Testing Facility</div>
+            <div class="lab-item">Micrometer, Vernier Caliper & Standard Gauge Measuring Instruments</div>
+            <div class="lab-item">3D Printer for Rapid Prototyping and R&D</div>
+            <div class="lab-item">Macro Etching Facility</div>
+            <div class="lab-item">Grain Size Testing Facility</div>
+            <div class="lab-item">Inclusion Rating Testing Facility</div>
+        </div>
+    </div>
+<style>
+    /* Laboratory Section Styling */
+.lab-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #fdfdfd;
+}
+
+.lab-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: darkgreen;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.lab-description {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.lab-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.lab-item {
+    background-color: #f7f7f7;
+    padding: 15px 20px;
+    border-left: 4px solid #ff7e5f;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-size: 1rem;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.lab-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive for small screens */
+@media (max-width: 600px) {
+    .lab-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .lab-heading {
+        font-size: 2rem;
+    }
+
+    .lab-description {
+        font-size: 1rem;
+    }
+}
+
+</style>    
+<p class="lab-extra">
+    Adequate knowledge in metallurgy helps us in our process design as well as customization of products for critical and unique applications. All our laboratory tests are conducted as per well-known Indian and International standards.
+</p>
+
+<style>
+    .lab-extra {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    padding: 0 10px;
+    line-height: 1.6;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .lab-extra {
+        font-size: 0.95rem;
+        padding: 0 15px;
+    }
+}
+
+</style>
+    <!-- Quality Control Process Section -->
+    <section class="qc-process">
+        <h2>Our Quality Control Process</h2>
+        <ul>
+            <li><strong>Material Inspection:</strong> All incoming raw materials are inspected for quality before production.</li>
+            <li><strong>Process Control:</strong> Each step in the manufacturing process is monitored for consistency and precision.</li>
+            <li><strong>Product Testing:</strong> Products undergo a range of tests to ensure they meet required performance standards.</li>
+            <li><strong>Final Inspection:</strong> A final inspection is carried out before the product is shipped to ensure it meets our strict quality standards.</li>
+        </ul>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="qc-certifications">
+        <h2>Certifications & Standards</h2>
+        <p>
+            We are proud to hold certifications that demonstrate our commitment to quality:
+        </p>
+        <ul>
+            <li>ISO 9001:2015 Certified</li>
+            <li>Industry-specific compliance certifications</li>
+            <li>Environmental and safety certifications</li>
+        </ul>
+    </section>
+
+    <!-- Testing Facilities Section -->
+    <section class="qc-testing">
+        <h2>Our Testing Facilities</h2>
+        <p>
+            We employ state-of-the-art testing facilities to ensure that each product meets the highest standards of quality. Our laboratories are equipped with the latest equipment, enabling us to perform rigorous tests on materials, products, and finished goods.
+        </p>
+    </section>
+
+    <!-- Why Quality Matters Section -->
+    <section class="qc-importance">
+        <h2>Why Quality Matters</h2>
+        <p>
+            Quality control is at the heart of everything we do. By maintaining high standards, we not only ensure the safety and reliability of our products but also foster long-term relationships with our clients. Quality is the foundation of our success.
+        </p>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="qc-customer-satisfaction">
+        <h2>Customer Satisfaction</h2>
+        <p>
+            Our commitment to quality has earned us the trust of customers worldwide. We ensure that our quality control practices lead to on-time delivery, consistency in product quality, and 100% customer satisfaction.
+        </p>
+    </section>
+</div>
+<style>
+    /* General Page Styling */
+.quality-control-container {
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Section Styling */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #ff7e5f;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    .quality-control-container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    section h2 {
+        font-size: 1.6rem;
+    }
+
+    section p, ul li {
+        font-size: 1rem;
+    }
+}
+
+</style>
+
+<!-- table -->
+<div class="quality-heading-wrapper">
+    <h3 class="quality-subheading">Testing Capabilities</h3>
+  </div>
+  
+<div class="table-wrapper">
+  <table class="qc-table">
+    <thead>
+      <tr>
+        <th>Test Name</th>
+        <th>Equipment Used</th>
+        <th>Standard Followed</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Chemical Composition</td>
+        <td>Spectrometer</td>
+        <td>IS/ASTM</td>
+      </tr>
+      <tr>
+        <td>Hardness Test</td>
+        <td>Rockwell Hardness Tester</td>
+        <td>ASTM E18</td>
+      </tr>
+      <tr>
+        <td>Tensile Strength</td>
+        <td>UTM 1000KN</td>
+        <td>ASTM E8</td>
+      </tr>
+      <tr>
+        <td>Microstructure</td>
+        <td>Metallurgical Microscope</td>
+        <td>ASTM E112</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- styling for teating capabilities heading -->
+<style>
+   .quality-heading-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+  width: 100%;
+}
+
+.quality-subheading {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #333;
+  position: relative;
+  padding-bottom: 12px;
+  text-align: center;
+  display: inline-block;
+}
+
+/* Gradient underline effect */
+.quality-subheading::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+  left: 20%;
+  bottom: 0;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .quality-subheading {
+    font-size: 1.6rem;
+  }
+
+  .quality-subheading::after {
+    width: 80%;
+    left: 10%;
+  }
+}
+/* testing cap engs here */
+</style>
+<style>
+    
+    .table-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 15px; /* Optional padding for small screens */
+}
+
+.qc-table {
+  width: 100%;
+  max-width: 900px; /* Keeps it from stretching too far */
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.qc-table th,
+.qc-table td {
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.qc-table th {
+  background-color: #ff7e5f;
+  color: #fff;
+}
+
+.qc-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+</style>
+<!-- footer section -->
+
+<footer class="custom-footer" id="footer-box">
+  <div class="footer-container">
+    
+    <!-- Column 1: Address -->
+    <div class="footer-column">
+      <h5>Address</h5>
+      <p>
+        <span class="highlighted-text">Singhania International Limited</span><br>
+        C-25, Phase - 1, Focal Point<br>
+        Dhandhari Kalan, Ludhiana<br>
+        Pincode: 141010, Punjab (India)
+      </p>
+    </div>
+
+    <!-- Column 2: Get in Touch -->
+    <div class="footer-column">
+      <h5>Get in Touch</h5>
+      <p>
+      <i class="fa-solid fa-clock me-2"></i> 09:00 am - 07:30 pm<br>
+      <i class="fa-solid fa-envelope me-2"></i>
+      <a href="mailto:info@singhaniainternational.com" style="color: white; text-decoration: none;">info@singhaniainternational.com
+      </a><br>
+      <i class="fa-solid fa-phone me-2"></i>
+      <a href="tel:+919357681418" style="color: white; text-decoration: none;"> +91-93576-81418
+      </a><br>
+      <i class="fa-solid fa-tty"></i>
+      <a href="tel:+911614611418" style="color: white; text-decoration: none;"> +91-0161-4611418
+      </a>,
+      <a href="tel:+911614606917" style="color: white; text-decoration: none;">4606917
+      </a>
+      </p>
+      </div>
+
+    <!-- Column 3: Social Media -->
+    <div class="footer-column">
+      <h5>Follow Us</h5>
+      <a href="https://www.facebook.com/STURDFIX" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a><br>
+      <a href="https://x.com/sturdfix" target="_blank" class="social-btn twitter-btn">
+        <i class="fab fa-twitter"></i> Twitter
+      </a><br>
+      <a href="https://www.youtube.com/@sturdfixsinghaniainternati2721" target="_blank" class="social-btn youtube-btn">
+        <i class="fab fa-youtube"></i> YouTube
+      </a><br>
+      <a href="https://www.instagram.com/sturdfix_/" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a><br>
+      <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <!-- Column 4: Quick Links -->
+    <div class="footer-column">
+      <h5>Quick Links</h5>
+      <ul class="quick-links">
+        <li><a href="all certificate.pdf"><i class="fas fa-download"></i> Downloads</a></li>
+        <li><a href="disclaimer.html"><i class="fas fa-file-alt"></i> Disclaimer</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      </ul> 
+    </div>
+    <style>
+      .quick-links {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.quick-links a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change text color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ff6f61; /* Change color on hover */
+}
+
+.quick-links i {
+  font-size: 18px; /* Set icon size */
+  color: #ff6f61; /* Set icon color */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover i {
+  color: #ff9f7f; /* Icon color change on hover */
+}
+@media (max-width: 600px) {
+  .footer-column {
+    text-align: center;
+  }
+
+  .quick-links {
+    display: inline-block;
+    text-align: left; /* Keeps items left-aligned within centered block */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .quick-links li {
+    width: 100%;
+  }
+
+  .quick-links a {
+    display: inline-flex; /* Inline to allow centering inside li if needed */
+    justify-content: flex-start; /* Align icon and text to the left */
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+    </style>
+
+    <!-- Column 5: Newsletter Subscription -->
+    <div class="footer-column">
+      <h5>Subscribe to our Newsletter</h5>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="subscriber-email" name="subscriber_email" placeholder="Enter your email" 
+        class="newsletter-input" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+    
+    <!-- EmailJS Script -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize EmailJS with your public key
+        emailjs.init("75FB0nHsOD4SFPb0k");
+    
+        // Handle form submission
+        document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+    
+          // Log form data to debug and ensure correct data is sent
+          const formData = new FormData(this);
+          formData.forEach((value, key) => {
+            console.log(key, value); // This logs each form field and its value
+          });
+    
+          // Send the form data to EmailJS (sendForm)
+          emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
+            .then(function (response) {
+              alert("Subscribed Successfully!"); // Success message
+              console.log("Email sent successfully:", response);
+            }, function (error) {
+              alert("Something went wrong. Please try again."); // Error message
+              console.error("Error sending email:", error);
+            });
+        });
+      });
+    </script>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Singhania International Limited. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+
+<button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollUpBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<style>
+  /* Style for the scroll to top button */
+/* Scroll to Top Button */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #28a745; /* Green background color */
+  color: white;  /* White text color */
+  border: none;  /* Remove border */
+  padding: 15px 20px; /* Add padding */
+  border-radius: 50%;  /* Make the button circular */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  z-index: 1000; /* Make sure the button stays on top */
+  display: none; /* Hidden by default */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+/* Scroll button visible when user scrolls */
+.show {
+  display: block;
+}
+
+</style>
+
+</body>
+</html>

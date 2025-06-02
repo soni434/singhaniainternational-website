@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="icon.png" type="image/png">
+
+
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    </style>
+   
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-bar">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+                <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                  <i class="fas fa-briefcase me-2"></i> Current Openings
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                  <i class="fas fa-file-upload me-2"></i> Share Your CV
+                </a>
+              </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+          
+        </li>
+        <!-- sturdfix-->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!-- Policies area -->
+<section class="policy-intro">
+    <div class="container">
+      <h1>Our Philosophy & Policies</h1>
+      <p>At Singhania International Limited, our actions are guided by clear principles and policies that reflect our unwavering commitment to excellence, ethics, and sustainability.</p>
+    </div>
+  </section>
+  
+  <section class="philosophy-block">
+    <div class="container philosophy-content">
+      <div class="philosophy-text">
+        <h2>Our Business Philosophy</h2>
+        <p>
+            At Singhania International Limited, we firmly believe that true business success is built on a foundation of <strong>integrity, innovation, and empathy</strong>. 
+            Integrity drives us to act with honesty, transparency, and fairness in every relationship — whether with clients, employees, or partners. 
+            Innovation keeps us agile and forward-thinking, enabling us to develop advanced fastener solutions that solve tomorrow's challenges today. 
+            Empathy ensures we understand and care for the needs of all stakeholders, from customers to communities.
+            <br><br>
+            Our philosophy goes beyond profits. We are committed to creating <strong>long-term value</strong> by fostering sustainable partnerships, investing in people, and making a positive difference in the industries and regions we serve. 
+            Guided by strong <strong>moral and social responsibility</strong>, we aim to grow not just as a business — but as a responsible global citizen, contributing to a more ethical, inclusive, and resilient future.
+          </p>
+          
+      </div>
+      <div class="philosophy-image">
+        <img src="4639891.jpg" alt="Business Philosophy">
+      </div>
+    </div>
+  </section>
+
+  <!-- our key policy box -->
+  <section class="policy-cards-section">
+    <div class="container">
+      <h2>Our Key Policies</h2>
+      <div class="policy-cards">
+        <div class="policy-card">
+          <h3>Code of Conduct</h3>
+          <p>Upholding transparency, fairness, and ethical responsibility in all operations and stakeholder interactions.</p>
+        </div>
+        <div class="policy-card">
+          <h3>Quality Policy</h3>
+          <p>Committed to delivering consistently superior products through continuous improvement and innovation.</p>
+        </div>
+        <div class="policy-card">
+          <h3>Environmental Policy</h3>
+          <p>Actively pursuing sustainable practices that minimize environmental impact and promote resource efficiency.</p>
+        </div>
+        <div class="policy-card">
+          <h3>Health & Safety</h3>
+          <p>Ensuring a safe and healthy working environment through proactive risk management and training.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- data as per original website -->
+  <!-- our vision our mission -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Our Vision</h1>
+      <p>To establish as a premier company to develop new market segments while strengthening our existing business.</p>
+      <h2>Our Mission</h2>
+      <p>To be a name to reckon with globally in manufacturing steel wires, cold forged components, and fasteners.</p>
+    </div>
+  </section>
+  
+<!-- core values -->
+<section class="future-plans">
+    <h2>Know Our Policies</h2>
+    <p class="intro-text">We are a company that believes in maintaining harmony between our ecological and business standards.</p>
+  
+    <div class="policy-grid">
+      <div class="policy-card">
+        <h3>Environment Policy</h3>
+        <p>We at Singhania International Limited strive to create a clean environment by:<br>
+          <strong>1.</strong> Conserving natural resources through Reduce, Reuse, and Recycle.<br>
+          <strong>2.</strong> Innovating to improve environmental compatibility.<br>
+          <strong>3.</strong> Complying with all legal and other requirements.<br>
+          <strong>4.</strong> Controlling pollution through effective measures.<br>
+          <strong>5.</strong> Communicating the policy to all concerned.<br><br>
+          We motivate our vendors and suppliers to follow this policy and be part of the change.
+        </p>
+      </div>
+  
+      <div class="policy-card">
+        <h3>Quality Policy</h3>
+        <p>We are committed to excellence through:<br>
+          <strong>1.</strong> Meeting customer requirements with trusted products.<br>
+          <strong>2.</strong> Developing strong supplier relationships.<br>
+          <strong>3.</strong> Offering high quality, timely delivery, and fair pricing.<br>
+          <strong>4.</strong> Adhering to all statutory and regulatory norms.<br>
+          <strong>5.</strong> Ensuring organizational commitment to quality culture.
+        </p>
+      </div>
+  
+      <div class="policy-card">
+        <h3>Health & Safety Policy</h3>
+        <p>We ensure employee and community well-being by:<br>
+          <strong>1.</strong> Integrating health and safety in all activities.<br>
+          <strong>2.</strong> Raising awareness among employees and partners.<br>
+          <strong>3.</strong> Ensuring plant and equipment safety.<br>
+          <strong>4.</strong> Continuous training and improvement.<br>
+          <strong>5.</strong> Complying with health and safety laws.<br><br>
+          Our values reflect a strong commitment to innovation, ethics, and people.
+        </p>
+      </div>
+  
+      <div class="policy-card">
+        <h3>Child and Forced Labour Policy</h3>
+        <p>We strictly prohibit:<br>
+          <strong>1.</strong> Employment of individuals under 18 years.<br>
+          <strong>2.</strong> Any form of forced or involuntary labour.<br><br>
+          These policies are publicly available and communicated to all employees and partners during onboarding and policy sessions.<br><br>
+          We inspire suppliers to align with these standards.
+        </p>
+      </div>
+    </div>
+  </section>
+<style>
+    .future-plans {
+  background: #f8fbff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.future-plans h2 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.future-plans .intro-text {
+  font-size: 16px;
+  color: #444;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.policy-card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 25px 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policy-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.policy-card h3 {
+  font-size: 22px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.policy-card p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.7;
+}
+
+.policy-card strong {
+  color: #003366;
+}
+
+</style>  
+
+<!-- future plans -->
+<section class="future-plans">
+    <h2>Our Future Plans</h2>
+    <p>We have several exciting plans for the future of our company, including:</p>
+  
+    <div class="plans-grid">
+      <div class="plan-card">
+        <h3>Expanding Product Range</h3>
+        <p>We plan to include a wider variety of fasteners in different materials to cater to diverse customer needs.</p>
+      </div>
+  
+      <div class="plan-card">
+        <h3>Investing in Technology</h3>
+        <p>We will invest in new technology and equipment to enhance our manufacturing capabilities and increase efficiency.</p>
+      </div>
+  
+      <div class="plan-card">
+        <h3>Enhancing Sustainability</h3>
+        <p>Our goal is to reduce waste, conserve energy, and minimize our environmental impact through various initiatives.</p>
+      </div>
+  
+      <div class="plan-card">
+      <h3>Expanding Market Reach</h3>
+      <p>We plan to explore new partnerships and markets, ensuring that our products reach a global audience.</p>
+      </div>
+  
+      <div class="plan-card">
+        <h3>Employee Development</h3>
+        <p>We will continue to prioritize employee skills development, fostering a culture of continuous learning and improvement.</p>
+      </div>
+    </div>
+  </section>
+  <!--our mission  -->
+  <section class="mission-section">
+    <h2>Our Mission</h2>
+    <div class="mission-grid">
+      <div class="mission-card">
+        <p><strong>Global Leadership:</strong> To be a name to reckon with globally in manufacturing steel wires, cold forged components, and fasteners.</p>
+      </div>
+      <div class="mission-card">
+        <p><strong>Ethical Standards:</strong> To remain committed to high standards of ethics in all spheres of our business.</p>
+      </div>
+      <div class="mission-card">
+        <p><strong>Environmental Focus:</strong> To continuously work for the betterment of the environment.</p>
+      </div>
+      <div class="mission-card">
+        <p><strong>Customer Value:</strong> To provide unmatched quality at competitive prices with the very best service to our customers.</p>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Our Values-->
+<section class="our-values">
+    <h2>Our Values</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <h3>Quality</h3>
+        <p>We are committed to delivering fasteners that meet the highest standards of quality and reliability.</p>
+      </div>
+      <div class="value-card">
+        <h3>Innovation</h3>
+        <p>We are constantly seeking new and innovative ways to improve our products and processes.</p>
+      </div>
+      <div class="value-card">
+        <h3>Customer Service</h3>
+        <p>We are committed to providing exceptional customer service and building long-term relationships with our customers.</p>
+      </div>
+      <div class="value-card">
+        <h3>Integrity</h3>
+        <p>We conduct our business with honesty, transparency, and ethical behaviour.</p>
+      </div>
+      <div class="value-card">
+        <h3>Teamwork</h3>
+        <p>We value collaboration, respect, and open communication among our employees and with our customers.</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+<!-- PRODUCT RANGE -->
+<section class="product-range">
+    <h2>Our Product Range</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <a href="sheet-metal-components.html" class="product-link">Sheet Metal Components</a>
+        </div>
+        <div class="product-card">
+            <a href="steel-wire.html" class="product-link">Steel Wire</a>
+        </div>
+        <div class="product-card">
+            <a href="fasteners.html" class="product-link">Fasteners</a>
+        </div>
+        <div class="product-card">
+            <a href="ore-minerals-coal.html" class="product-link">Ore, Minerals & Coal</a>
+        </div>
+        <div class="product-card">
+            <a href="ferro-alloys.html" class="product-link">Ferro Alloys</a>
+        </div>
+        <div class="product-card">
+            <a href="chemicals.html" class="product-link">Chemicals</a>
+        </div>
+        <div class="product-card">
+            <a href="non-ferrous-metals.html" class="product-link">Non-Ferrous Metals</a>
+        </div>
+    </div>
+</section><br>
+<!-- print button -->
+<div class="text-center my-4">
+  <button onclick="window.print()" class="btn print-button">
+    <i class="fas fa-print me-2"></i>Print Page
+  </button>
+</div>
+
+
+<style>
+  .print-button {
+  background: linear-gradient(135deg, #4CAF50, #2E7D32);
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.print-button:hover {
+  background: linear-gradient(135deg, #388E3C, #1B5E20);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.print-button:active {
+  transform: scale(0.98);
+}
+
+@media (max-width: 600px) {
+  .print-button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+  </style>
+<!-- footer section -->
+
+<footer class="custom-footer">
+    <div class="footer-container">
+      
+      <!-- Column 1: Address -->
+      <div class="footer-column">
+        <h5>Address</h5>
+        <p>
+          <span class="highlighted-text">Singhania International Limited</span><br>
+          C-25, Phase - 1, Focal Point<br>
+          Dhandhari Kalan, Ludhiana<br>
+          Pincode: 141010, Punjab (India)
+        </p>
+      </div>
+  
+      <!-- Column 2: Get in Touch -->
+      <div class="footer-column">
+        <h5>Get in Touch</h5>
+        <p>
+        <i class="fa-solid fa-clock me-2"></i> 09:00 am - 07:30 pm<br>
+        <i class="fa-solid fa-envelope me-2"></i>
+        <a href="mailto:info@singhaniainternational.com" style="color: white; text-decoration: none;">info@singhaniainternational.com
+        </a><br>
+        <i class="fa-solid fa-phone me-2"></i>
+        <a href="tel:+919357681418" style="color: white; text-decoration: none;"> +91-93576-81418
+        </a><br>
+        <i class="fa-solid fa-tty"></i>
+        <a href="tel:+911614611418" style="color: white; text-decoration: none;"> +91-0161-4611418
+        </a>,
+        <a href="tel:+911614606917" style="color: white; text-decoration: none;">4606917
+        </a>
+        </p>
+        </div>
+  
+      <!-- Column 3: Social Media -->
+      <div class="footer-column">
+        <h5>Follow Us</h5>
+        <a href="https://www.facebook.com/STURDFIX" target="_blank" class="social-btn facebook-btn">
+          <i class="fab fa-facebook-f"></i> Facebook
+        </a><br>
+        <a href="https://x.com/sturdfix" target="_blank" class="social-btn twitter-btn">
+          <i class="fab fa-twitter"></i> Twitter
+        </a><br>
+        <a href="https://www.youtube.com/@sturdfixsinghaniainternati2721" target="_blank" class="social-btn youtube-btn">
+          <i class="fab fa-youtube"></i> YouTube
+        </a><br>
+        <a href="https://www.instagram.com/sturdfix_/" target="_blank" class="social-btn instagram-btn">
+          <i class="fab fa-instagram"></i> Instagram
+        </a><br>
+        <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+  
+      <!-- Column 4: Quick Links -->
+      <div class="footer-column">
+        <h5>Quick Links</h5>
+        <ul class="quick-links">
+          <li><a href="all certificate.pdf"><i class="fas fa-download"></i> Downloads</a></li>
+        <li><a href="disclaimer.html"><i class="fas fa-file-alt"></i> Disclaimer</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+        </ul> 
+      </div>
+      <style>
+        .quick-links {
+    list-style-type: none; /* Remove default list bullet points */
+    padding: 0;
+  }
+  
+  .quick-links li {
+    margin-bottom: 10px; /* Add space between list items */
+  }
+  
+  .quick-links a {
+    text-decoration: none; /* Remove underlines */
+    color: white; /* Change text color */
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add some space between icon and text */
+    transition: color 0.3s ease;
+  }
+  
+  .quick-links a:hover {
+    color: #ff6f61; /* Change color on hover */
+  }
+  
+  .quick-links i {
+    font-size: 18px; /* Set icon size */
+    color: #ff6f61; /* Set icon color */
+    transition: color 0.3s ease;
+  }
+  
+  .quick-links a:hover i {
+    color: #ff9f7f; /* Icon color change on hover */
+  }
+  @media (max-width: 600px) {
+    .footer-column {
+      text-align: center;
+    }
+  
+    .quick-links {
+      display: inline-block;
+      text-align: left; /* Keeps items left-aligned within centered block */
+      margin: 0 auto;
+      padding: 0;
+    }
+  
+    .quick-links li {
+      width: 100%;
+    }
+  
+    .quick-links a {
+      display: inline-flex; /* Inline to allow centering inside li if needed */
+      justify-content: flex-start; /* Align icon and text to the left */
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+      color: white;
+    }
+  }
+  
+      </style>
+  
+      <!-- Column 5: Newsletter Subscription -->
+      <div class="footer-column">
+        <h5>Subscribe to our Newsletter</h5>
+        <form id="newsletter-form" class="newsletter-form">
+          <input type="email" id="subscriber-email" name="subscriber_email" placeholder="Enter your email" 
+          class="newsletter-input" required>
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+      
+      <!-- EmailJS Script -->
+      <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          // Initialize EmailJS with your public key
+          emailjs.init("75FB0nHsOD4SFPb0k");
+      
+          // Handle form submission
+          document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+      
+            // Log form data to debug and ensure correct data is sent
+            const formData = new FormData(this);
+            formData.forEach((value, key) => {
+              console.log(key, value); // This logs each form field and its value
+            });
+      
+            // Send the form data to EmailJS (sendForm)
+            emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
+              .then(function (response) {
+                alert("Subscribed Successfully!"); // Success message
+                console.log("Email sent successfully:", response);
+              }, function (error) {
+                alert("Something went wrong. Please try again."); // Error message
+                console.error("Error sending email:", error);
+              });
+          });
+        });
+      </script>
+      </div>
+  
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Singhania International Limited. All rights reserved.</p>
+    </div>
+  </footer>
+  
+  
+  <!-- Scroll to Top Button -->
+  
+  <button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+    <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+  </button>
+  <script>
+    // Get the button
+    var mybutton = document.getElementById("scrollUpBtn");
+  
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    };
+  
+    // When the user clicks on the button, scroll to the top of the document
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+  </script>
+  
+  <style>
+    /* Style for the scroll to top button */
+  /* Scroll to Top Button */
+  #scrollUpBtn {
+    position: fixed;
+    bottom: 20px; /* Position the button 20px from the bottom */
+    right: 20px;  /* Position the button 20px from the right */
+    background-color: #28a745; /* Green background color */
+    color: white;  /* White text color */
+    border: none;  /* Remove border */
+    padding: 15px 20px; /* Add padding */
+    border-radius: 50%;  /* Make the button circular */
+    font-size: 18px; /* Font size */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for background color */
+    z-index: 1000; /* Make sure the button stays on top */
+    display: none; /* Hidden by default */
+  }
+  
+  /* Hover effect */
+  #scrollToTopBtn:hover {
+    background-color: #218838; /* Darker green when hovered */
+  }
+  
+  /* Scroll button visible when user scrolls */
+  .show {
+    display: block;
+  }
+  
+  </style>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

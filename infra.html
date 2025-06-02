@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singhania International Limited</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="icon.png" type="image/png">
+
+  
+</head>
+<body>
+    <div class="header-container">
+      <div class="logo-button">
+          <img src="logo.jpg" alt="Logo" class="logo-img">
+      </div>
+      <h1 class="singhania-heading">SINGHANIA INTERNATIONAL LIMITED</h1>
+      <a href="index.html" class="home-button" title="Back to Home">
+        <span>🏠</span> Home
+      </a>
+    </div>
+    <style>
+.home-button {
+  position: fixed;
+  top: 45px;
+  left: auto;
+  right: 20px;
+  background: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  z-index: 999;
+}
+
+.home-button:hover {
+  background: dodgerblue;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* ✅ Media Query for screens 600px or smaller */
+@media (max-width: 600px) {
+  .home-button {
+    top: 30px;
+    right: 20px;
+    padding: 4px 8px;
+    font-size: 12px;
+    border-radius: 20px;
+    gap: 2px;
+  }
+}
+    </style>
+    
+   
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="nav-bar">
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible Content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <!-- THE GROUP -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            THE GROUP
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- BUSINESS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            BUSINESS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="infra.html"><i class="fas fa-info-circle me-2"></i> Infrastructure</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="qc.html"><i class="fas fa-book me-2"></i> Quality Control</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+          </ul>
+        </li>
+
+        <!-- PRODUCTS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PRODUCTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item custom-dropdown-color" href="ferro-alloys.html"><i class="fas fa-info-circle me-2"></i> Ferro Alloys</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="ore-min-coal.html"><i class="fas fa-book me-2"></i> Ores, Minerals, Coal</a></li>
+
+            <!-- Fasteners with submenus -->
+            <li class="dropdown-submenu position-relative">
+              <a class="dropdown-item dropdown-toggle custom-dropdown-color" href="#"><i class="fas fa-users-cog me-2"></i> Fasteners</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item custom-dropdown-color" href="anchors.html"><i class="fas fa-anchor me-2"></i> Anchors</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="high-tensile-anchor.html"><i class="fas fa-weight-hanging me-2"></i> High Tensile Anchor</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="nuts.html"><i class="fas fa-circle-notch me-2"></i> Nuts</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="screws.html"><i class="fas fa-screwdriver me-2"></i> Screws</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="washers.html"><i class="fas fa-compact-disc me-2"></i> Washers</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="bolt.html"><i class="fas fa-bolt me-2"></i> Bolt</a></li>
+                <li><a class="dropdown-item custom-dropdown-color" href="studs.html"><i class="fas fa-tools me-2"></i> Studs</a></li>
+              </ul>
+            </li>
+
+            <li><a class="dropdown-item custom-dropdown-color" href="steel-wires.html"><i class="fas fa-cogs me-2"></i> Steel Wires</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="chemicals.html"><i class="fas fa-flask me-2"></i> Chemicals</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="non-ferrous-metal.html"><i class="fas fa-cogs me-2"></i> Non-Ferrous Metal</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="long-product.html"><i class="fas fa-barcode me-2"></i> Long Products</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="sheet-metal.html"><i class="fas fa-industry me-2"></i> Sheet Metals</a></li>
+          </ul>
+        </li>
+
+        <!-- CERTIFICATES -->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group" aria-current="page" href="certificate.html">CERTIFICATES</a>
+        </li>
+
+        <!-- CAREERS -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CAREERS
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
+                <i class="fas fa-briefcase me-2"></i> Current Openings
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
+                <i class="fas fa-file-upload me-2"></i> Share Your CV
+              </a>
+            </li>
+            </ul>
+        </li>
+
+        <!-- CONTACT US -->
+        <li class="nav-item dropdown ms-4">
+          <a class="nav-link dropdown-toggle text-red-custom" id="group" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            CONTACT US
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+            <a class="dropdown-item custom-dropdown-color" href="contact-us.html">
+              <i class="fas fa-map-marker-alt me-2"></i> Location
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item custom-dropdown-color" href="quote.html">
+              <i class="fas fa-file-signature"></i> Request for Quote
+            </a>
+          </li>
+            </ul>
+          
+        </li>
+        <!-- sturdfix-->
+        <li class="nav-item ms-4">
+          <a class="nav-link active text-red-custom" id="group-str" aria-current="page" href="https://sturdfix.com/" target="_blank">STURDFIX</a>
+        </li>
+      </ul>
+      <form class="d-flex align-items-center ms-4" role="search">
+        <input class="form-control form-control-sm" id="srch-bar" type="search" placeholder="Search your query" aria-label="Search">
+        <button class="btn btn-sm btn-outline-success ms-2" id="srch-btn" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<!-- infra -->
+<!-- Infrastructure Section -->
+<div class="container">
+    <h2 class="infrastructure-heading">Our Infrastructure</h2>
+    <p class="infrastructure-quote">"For a company built to last, it must invest in what will fuel it for generations to come - Its Infrastructure"</p>
+</div>
+
+<!-- Styles -->
+<style>
+    /* Base Heading Styling */
+    .infrastructure-heading {
+        text-align: center;
+        color: #333;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 3rem;
+        letter-spacing: 2px;
+        margin-top: -350px; /* Original desktop layout */
+        margin-bottom: 30px;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 10px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        animation: fadeIn 1s ease-out forwards;
+        animation-delay: 0.5s;
+    }
+
+    /* Underline effect */
+    .infrastructure-heading::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, #ff7e5f, #feb47b);
+        border-radius: 3px;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.4s ease-out;
+    }
+
+    .infrastructure-heading:hover::before {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+
+    /* Quote Styling */
+    .infrastructure-quote {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #555;
+        text-align: center;
+        max-width: 800px;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 10px 20px;
+        border-left: 5px solid #ff7e5f;
+        background-color: #f7f7f7;
+        border-radius: 5px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+    }
+
+    .infrastructure-quote:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Container styling */
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Mobile View: max-width 600px */
+    @media (max-width: 600px) {
+        .infrastructure-heading {
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin-top: -600px; /* Reduced top margin for mobile */
+            margin-bottom: 20px;
+            padding-bottom: 6px;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .infrastructure-quote {
+            font-size: 1rem;
+            padding: 8px 16px;
+            margin-top: 10px;
+        }
+
+        .container {
+            padding: 10px;
+        }
+    }
+</style>
+<!-- paragraph -->
+<!-- Infrastructure Paragraph Section -->
+<p class="infrastructure-paragraph">
+    We, at Singhania International, have incorporated best practices and modern production techniques in 
+    all our manufacturing units. Our 10,000 sqm. integrated manufacturing plant consists of hi-tech 
+    machines and technically sound operators. The complete production process is thoroughly screened for
+    consistency in quality of the end product. In addition, we have an indigenous packing and storage 
+    space of over 50,000 sqft for handling of incoming raw material and finished goods at Sahnewal, Punjab.
+    <br><br>
+    We have a clean and state-of-the-art acid pickling and phosphating unit for cleaning the surface
+    of wire rods and giving a rust-free wire surface with uniform phosphate, lime, borax or 
+    rust-preventive oil coating according to our customers’ requirements. Our baking ovens for wires 
+    ensure rust-free wire surface, delivering good quality wires steadily.
+    <br><br>
+    Our ultra-modern PLC controlled spheroidising electric bell-type annealing furnaces with Nitrogen 
+    and Hydrocarbon inert atmosphere ensures NIL decarb in our annealed wires while achieving 
+    spheroidisation rates of up to 95% in our processed wires. The wires undergo gradual heating, 
+    soaking and controlled cooling in an inert atmosphere to achieve the desired mechanical, 
+    metallurgical properties & microstructure.
+</p>
+
+<!-- Styles -->
+<style>
+    .infrastructure-paragraph {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        font-size: 1.125rem;
+        line-height: 1.8;
+        max-width: 950px;
+        margin: 40px auto;
+        margin-top: -350px;
+        padding: 30px;
+        background-color: #f9f9f9;
+        border-left: 6px solid #ff7e5f;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease-out;
+        text-align: justify;
+    }
+
+    .infrastructure-paragraph:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .infrastructure-paragraph::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 3px;
+        margin-top: 20px;
+        background-color: #ff7e5f;
+        border-radius: 5px;
+    }
+
+    /* Responsive Styling for Small Screens */
+    @media (max-width: 600px) {
+        .infrastructure-paragraph {
+            font-size: 1rem;
+            padding: 20px;
+            margin: 20px 10px;
+            margin-top: -600px; /* Reduced top margin for mobile */
+        }
+    }
+</style>
+<!-- 8 points about mahine -->
+<div class="container">
+    <h3 class="machines-heading">Some of the machines and facilities installed at our manufacturing unit are as follows:</h3>
+    <div class="machines-grid">
+        <div class="machine-item">Inverted vertical bull blocks</div>
+        <div class="machine-item">PLC Controlled fully automatic Electric Bell Type Annealing furnace</div>
+        <div class="machine-item">Horizontal bull blocks</div>
+        <div class="machine-item">De-scaler for wires up to 12mm</div>
+        <div class="machine-item">OTO-Pulley Type Wire drawing machine</div>
+        <div class="machine-item">Straight Line wire drawing machines</div>
+        <div class="machine-item">Overhead & floor cranes for material handling</div>
+        <div class="machine-item">Automatic wire coil wrapping and packing machine</div>
+    </div>
+</div>
+
+<style>
+/* Container styling */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Heading styling */
+.machines-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: darkgreen;
+    margin-bottom: 30px;
+}
+
+/* Grid layout */
+.machines-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns on larger screens */
+    gap: 20px;
+    text-align: center;
+}
+
+/* Individual item styling */
+.machine-item {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.machine-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive media query for max-width: 600px */
+@media (max-width: 600px) {
+    .machines-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        gap: 15px;
+        
+    }
+
+
+    .machine-item {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    .machines-heading {
+        font-size: 1.2rem;
+        margin-top: -300px;
+    }
+}
+</style>
+<!-- paragraph -->
+<!-- In-House Expertise Section -->
+<div class="container">
+    <h2 class="section-heading">In-House Expertise and Technology</h2>
+    <p class="expertise-paragraph">
+        In-house R&D team, with experienced engineers, and our state-of-the-art manufacturing technology 
+        and equipment, integrated with tool design and development ensures smooth functioning of all operations. 
+        This in turn helps us innovate our products and services thereby delivering highest level of quality, 
+        consistency, and cost effectiveness.
+        <br><br>
+        SIL has in-house spheroidizing annealing and wire drawing facility for making CHQ steel wire of diameter 
+        up to 30 mm. Our automatic temperature and atmosphere-controlled bell annealing furnace ensures 
+        maximum machinability, ductility and uniform microstructure, thereby leading to enhanced surface finish 
+        to the final product.
+    </p>
+</div>
+
+<style>
+/* Section Container */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Section Heading */
+.section-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: darkgreen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+/* Paragraph Styling */
+.expertise-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    background-color: #f9f9f9;
+    border-left: 5px solid #ff7e5f;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.expertise-paragraph:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive for mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .section-heading {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-top: -500px;
+    }
+
+    .expertise-paragraph {
+        font-size: 1rem;
+        padding: 18px;
+        margin: 0 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
+</style>
+<!-- 9x2 layout -->
+<!-- Advanced Facility Section -->
+<div class="container">
+    <h2 class="section-heading-facility">Our Advanced Facility</h2>
+    <div class="facility-grid">
+        <div class="facility-item">6-station nut and part formers</div>
+        <div class="facility-item">Multi station bolt part formers</div>
+        <div class="facility-item">Thread rolling machines</div>
+        <div class="facility-item">Multi spindle nut tapping machines</div>
+        <div class="facility-item">Special nut tapping machines</div>
+        <div class="facility-item">Nylon washer crimping machines</div>
+        <div class="facility-item">Hydraulic Presses</div>
+        <div class="facility-item">Castle nut slot cutting machines</div>
+        <div class="facility-item">Wire drawing machines</div>
+        <div class="facility-item">Bell annealing furnaces</div>
+        <div class="facility-item">Wire straightening & cutting machine</div>
+        <div class="facility-item">Spring washer coiling & cutting machine</div>
+        <div class="facility-item">Universal milling machine</div>
+        <div class="facility-item">Surface grinder</div>
+        <div class="facility-item">Tool and cutter grinder</div>
+        <div class="facility-item">Cylindrical grinder</div>
+        <div class="facility-item">Center-less grinder</div>
+        <div class="facility-item">Other auxiliary machines</div>
+    </div>
+</div>
+
+<style>
+/* Container Styling */
+.container {
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Heading Styling */
+.section-heading-facility {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: darkgreen;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.facility-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for desktop */
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Individual Items */
+.facility-item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    color: #555;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Hover Effect */
+.facility-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Grid for Small Screens */
+@media (max-width: 600px) {
+    .section-heading-facility {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-top: -350px;
+    }
+
+    .facility-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+        gap: 12px;
+    }
+
+    .facility-item {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+</style>
+<!-- maintenanc -->
+ <!-- Our Team and Maintenance Section -->
+<div class="maintenance-container">
+    <p class="maintenance-paragraph">
+        Our team of experienced technical and mechanical engineers supported by their helpers, 
+        regularly maintain all our equipment as per scheduled maintenance plan, thus ensuring high 
+        reliability and fewer breakdowns of equipment. 
+        
+        <br><br>Our infrastructure helps us maintain our quality while meeting our customer's strict delivery schedules with minimum lead times.
+    </p>
+</div>
+
+<style>
+/* Container Styling */
+.maintenance-container {
+    margin: 40px auto;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* Paragraph Styling */
+.maintenance-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 600px) {
+    .maintenance-paragraph {
+        font-size: 1rem; /* Adjust text size for smaller screens */
+        line-height: 1.4; /* Adjust line height for better readability */
+        padding: 0 10px;
+        margin-top: -90px;
+    }
+}
+</style>
+<style>
+    @media (max-width: 600px) {
+    #footer-box {
+        
+        margin-top: -10px;
+    }
+}
+</style>
+<!-- list of machineries -->
+<div class="machinery-container">
+  <h2>Machinery List</h2>
+  <div class="table-wrapper">
+    <table class="machinery-table">
+      <thead>
+        <tr>
+          <th>Machine Name</th>
+          <th>Size Range / Tonnage</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Machine Name">Multi Station Cold Nut & Part formers</td>
+          <td data-label="Size Range / Tonnage">M4 to M20</td>
+          <td data-label="Quantity">8 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Multi Station Cold Bolt formers</td>
+          <td data-label="Size Range / Tonnage">M4 to M25</td>
+          <td data-label="Quantity">10 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">High Speed Stamping Presses</td>
+          <td data-label="Size Range / Tonnage">25 Tons – 160 Tons</td>
+          <td data-label="Quantity">12 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Header (1 Die 2 Blow)</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">5 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Bell Annealing Furnace</td>
+          <td data-label="Size Range / Tonnage">6 Tons batch capacity</td>
+          <td data-label="Quantity">3 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Flat Die Thread Rolling Machines</td>
+          <td data-label="Size Range / Tonnage">M4 – M25</td>
+          <td data-label="Quantity">12 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Hydraulic Thread Rolling Machines</td>
+          <td data-label="Size Range / Tonnage">M5 – M80</td>
+          <td data-label="Quantity">7 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Spring Washer Coiling and Cutting Section</td>
+          <td data-label="Size Range / Tonnage">M3 – M48</td>
+          <td data-label="Quantity">7 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Nut Tapping Machines</td>
+          <td data-label="Size Range / Tonnage">M4 to M27</td>
+          <td data-label="Quantity">11 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Nylon Washer Crimping Machines</td>
+          <td data-label="Size Range / Tonnage">M5 to M20</td>
+          <td data-label="Quantity">7 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">CNC Turning Centers</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">2 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Hot Forging Presses</td>
+          <td data-label="Size Range / Tonnage">M24 – M72</td>
+          <td data-label="Quantity">2 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Automatic Bar End Chamfering Machines</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">3 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Semi Automatic Zinc Plating Plant</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">8 Sets.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Hardening & Tempering Furnace</td>
+          <td data-label="Size Range / Tonnage">Induction for round/threaded bars</td>
+          <td data-label="Quantity">–</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Circular Saw with Auto Bar Feeder</td>
+          <td data-label="Size Range / Tonnage">5mm – 80mm dia</td>
+          <td data-label="Quantity">1 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Tool Room</td>
+          <td data-label="Size Range / Tonnage">Lathes, EDM, Grinders, etc.</td>
+          <td data-label="Quantity">12 Machines</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Wire Forming</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">1 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Wire Drawing Plant</td>
+          <td data-label="Size Range / Tonnage">1.5mm – 30mm</td>
+          <td data-label="Quantity">12 Machines</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Wire Straightening & Cutting Machines</td>
+          <td data-label="Size Range / Tonnage">5mm – 24mm dia</td>
+          <td data-label="Quantity">2 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Auto Bag/Kit Packing Machine</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">1 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Packing and Sorting Conveyor</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">1 Nos.</td>
+        </tr>
+        <tr>
+          <td data-label="Machine Name">Optical Sorting Machine</td>
+          <td data-label="Size Range / Tonnage">–</td>
+          <td data-label="Quantity">1 Nos.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<style>
+  .machinery-container {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .machinery-container h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+  }
+
+  .machinery-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+  }
+
+  .machinery-table th,
+  .machinery-table td {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+
+  .machinery-table th {
+    background-color: #004080;
+    color: white;
+  }
+
+  .machinery-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  /* Responsive Table */
+  @media (max-width: 600px) {
+  .machinery-table {
+    border: 0;
+    font-size: 14px; /* ↓ Font size reduced */
+  }
+
+  .machinery-table thead {
+    display: none;
+  }
+
+  .machinery-table tr {
+    margin-bottom: 10px;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: white;
+  }
+
+  .machinery-table td {
+    display: block;
+    text-align: right;
+    padding: 8px 12px; /* ↓ Padding slightly reduced */
+    border-bottom: 1px solid #eee;
+    position: relative;
+    font-size: 14px; /* ↓ Font size reduced */
+  }
+
+  .machinery-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 12px;
+    width: 50%;
+    text-align: left;
+    font-weight: bold;
+    color: #004080;
+    font-size: 13px; /* ↓ Font size reduced for labels */
+  }
+
+  .machinery-table td:last-child {
+    border-bottom: 0;
+  }
+}
+
+</style>
+
+<!-- machinery styling ends here -->
+<!-- footer section -->
+
+<footer class="custom-footer" id="footer-box">
+  <div class="footer-container">
+    
+    <!-- Column 1: Address -->
+    <div class="footer-column">
+      <h5>Address</h5>
+      <p>
+        <span class="highlighted-text">Singhania International Limited</span><br>
+        C-25, Phase - 1, Focal Point<br>
+        Dhandhari Kalan, Ludhiana<br>
+        Pincode: 141010, Punjab (India)
+      </p>
+    </div>
+
+    <!-- Column 2: Get in Touch -->
+    <div class="footer-column">
+      <h5>Get in Touch</h5>
+      <p>
+      <i class="fa-solid fa-clock me-2"></i> 09:00 am - 07:30 pm<br>
+      <i class="fa-solid fa-envelope me-2"></i>
+      <a href="mailto:info@singhaniainternational.com" style="color: white; text-decoration: none;">info@singhaniainternational.com
+      </a><br>
+      <i class="fa-solid fa-phone me-2"></i>
+      <a href="tel:+919357681418" style="color: white; text-decoration: none;"> +91-93576-81418
+      </a><br>
+      <i class="fa-solid fa-tty"></i>
+      <a href="tel:+911614611418" style="color: white; text-decoration: none;"> +91-0161-4611418
+      </a>,
+      <a href="tel:+911614606917" style="color: white; text-decoration: none;">4606917
+      </a>
+      </p>
+      </div>
+
+    <!-- Column 3: Social Media -->
+    <div class="footer-column">
+      <h5>Follow Us</h5>
+      <a href="https://www.facebook.com/STURDFIX" target="_blank" class="social-btn facebook-btn">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a><br>
+      <a href="https://x.com/sturdfix" target="_blank" class="social-btn twitter-btn">
+        <i class="fab fa-twitter"></i> Twitter
+      </a><br>
+      <a href="https://www.youtube.com/@sturdfixsinghaniainternati2721" target="_blank" class="social-btn youtube-btn">
+        <i class="fab fa-youtube"></i> YouTube
+      </a><br>
+      <a href="https://www.instagram.com/sturdfix_/" target="_blank" class="social-btn instagram-btn">
+        <i class="fab fa-instagram"></i> Instagram
+      </a><br>
+      <a href="https://www.linkedin.com/company/singhania-international-limited/posts/?feedView=all" target="_blank" class="social-btn linkedin-btn">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+    </div>
+
+    <!-- Column 4: Quick Links -->
+    <div class="footer-column">
+      <h5>Quick Links</h5>
+      <ul class="quick-links">
+        <li><a href="all certificate.pdf"><i class="fas fa-download"></i> Downloads</a></li>
+        <li><a href="disclaimer.html"><i class="fas fa-file-alt"></i> Disclaimer</a></li>
+        <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+      </ul> 
+    </div>
+    <style>
+      .quick-links {
+  list-style-type: none; /* Remove default list bullet points */
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px; /* Add space between list items */
+}
+
+.quick-links a {
+  text-decoration: none; /* Remove underlines */
+  color: white; /* Change text color */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Add some space between icon and text */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ff6f61; /* Change color on hover */
+}
+
+.quick-links i {
+  font-size: 18px; /* Set icon size */
+  color: #ff6f61; /* Set icon color */
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover i {
+  color: #ff9f7f; /* Icon color change on hover */
+}
+@media (max-width: 600px) {
+  .footer-column {
+    text-align: center;
+  }
+
+  .quick-links {
+    display: inline-block;
+    text-align: left; /* Keeps items left-aligned within centered block */
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .quick-links li {
+    width: 100%;
+  }
+
+  .quick-links a {
+    display: inline-flex; /* Inline to allow centering inside li if needed */
+    justify-content: flex-start; /* Align icon and text to the left */
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    color: white;
+  }
+}
+
+    </style>
+
+    <!-- Column 5: Newsletter Subscription -->
+    <div class="footer-column">
+      <h5>Subscribe to our Newsletter</h5>
+      <form id="newsletter-form" class="newsletter-form">
+        <input type="email" id="subscriber-email" name="subscriber_email" placeholder="Enter your email" 
+        class="newsletter-input" required>
+        <button type="submit" class="newsletter-btn">Subscribe</button>
+      </form>
+    </div>
+    
+    <!-- EmailJS Script -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Initialize EmailJS with your public key
+        emailjs.init("75FB0nHsOD4SFPb0k");
+    
+        // Handle form submission
+        document.getElementById("newsletter-form").addEventListener("submit", function (e) {
+          e.preventDefault();
+    
+          // Log form data to debug and ensure correct data is sent
+          const formData = new FormData(this);
+          formData.forEach((value, key) => {
+            console.log(key, value); // This logs each form field and its value
+          });
+    
+          // Send the form data to EmailJS (sendForm)
+          emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
+            .then(function (response) {
+              alert("Subscribed Successfully!"); // Success message
+              console.log("Email sent successfully:", response);
+            }, function (error) {
+              alert("Something went wrong. Please try again."); // Error message
+              console.error("Error sending email:", error);
+            });
+        });
+      });
+    </script>
+    </div>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Singhania International Limited. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<!-- Scroll to Top Button -->
+
+<button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
+  <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
+</button>
+<script>
+  // Get the button
+  var mybutton = document.getElementById("scrollUpBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  };
+
+  // When the user clicks on the button, scroll to the top of the document
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }
+</script>
+
+<style>
+  /* Style for the scroll to top button */
+/* Scroll to Top Button */
+#scrollUpBtn {
+  position: fixed;
+  bottom: 20px; /* Position the button 20px from the bottom */
+  right: 20px;  /* Position the button 20px from the right */
+  background-color: #28a745; /* Green background color */
+  color: white;  /* White text color */
+  border: none;  /* Remove border */
+  padding: 15px 20px; /* Add padding */
+  border-radius: 50%;  /* Make the button circular */
+  font-size: 18px; /* Font size */
+  cursor: pointer; /* Add a pointer cursor on hover */
+  transition: background-color 0.3s; /* Smooth transition for background color */
+  z-index: 1000; /* Make sure the button stays on top */
+  display: none; /* Hidden by default */
+}
+
+/* Hover effect */
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Darker green when hovered */
+}
+
+/* Scroll button visible when user scrolls */
+.show {
+  display: block;
+}
+
+</style>
+
+</body>
+</html>
