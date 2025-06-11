@@ -152,11 +152,11 @@
             CAREERS
           </a>
           <ul class="dropdown-menu">
-            <li>
+            <!-- <li>
                 <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
                   <i class="fas fa-briefcase me-2"></i> Current Openings
                 </a>
-              </li>
+              </li> -->
               <li>
                 <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
                   <i class="fas fa-file-upload me-2"></i> Share Your CV
@@ -199,9 +199,10 @@
 <!-- career + designing -->
 <div class="container my-5">
     <h2 class="mb-4 text-center text-uppercase">Current Openings</h2>
-  
+    <p id="coming-soon">Coming soon........</p>
+          
     <!-- Job Card Example -->
-    <div class="card mb-4 job-card">
+    <!-- <div class="card mb-4 job-card">
       <div class="card-body">
         <h5 class="card-title">Position Required: <span class="text-primary">Software Developer</span></h5>
         <p><strong>Current Opening ID:</strong> JD-101</p>
@@ -211,10 +212,10 @@
         <p><strong>Job Description:</strong> Must have experience with JavaScript, React, Node.js. Familiarity with REST APIs and Git is required.</p>
         <a href="share-cv.html" target="_blank" class="btn btn-outline-primary">Apply Now</a>
       </div>
-    </div>
+    </div> -->
   
     <!-- Duplicate the block below for more job cards -->
-    <div class="card mb-4 job-card">
+    <!-- <div class="card mb-4 job-card">
       <div class="card-body">
         <h5 class="card-title">Position Required: <span class="text-primary">Marketing Executive</span></h5>
         <p><strong>Current Opening ID:</strong> JD-102</p>
@@ -225,9 +226,36 @@
         <a href="share-cv.html" target="_blank" class="btn btn-outline-primary">Apply Now</a>
       </div>
     </div>
-  </div>
+  </div> -->
     
 <style>
+  #coming-soon {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6f61; /* a warm coral color */
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: pulse 2s infinite ease-in-out;
+  margin: 50px 0;
+  text-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+}
+
+/* Pulse animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(255, 111, 97, 0.7);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+    text-shadow: 0 0 20px rgba(255, 111, 97, 1);
+  }
+}
+
     p{
         color: black;
     }

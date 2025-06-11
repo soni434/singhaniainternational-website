@@ -152,11 +152,11 @@
             CAREERS
           </a>
           <ul class="dropdown-menu">
-            <li>
+            <!-- <li>
               <a class="dropdown-item custom-dropdown-color" href="current-openings.html">
                 <i class="fas fa-briefcase me-2"></i> Current Openings
               </a>
-            </li>
+            </li> -->
             <li>
               <a class="dropdown-item custom-dropdown-color" href="share-cv.html">
                 <i class="fas fa-file-upload me-2"></i> Share Your CV
@@ -288,48 +288,98 @@
   </div>
 
   <!-- global presence -->
-  <div class="global-presence">
+  <<div class="global-presence">
     <h2>Our Global Presence</h2>
-    <p>We proudly supply high-quality fasteners, alloys, and industrial materials to clients around the world. Our network spans across key markets in Asia, Europe, the Middle East, and the Americas.</p>
+    <p>We proudly supply high-quality fasteners, alloys, and industrial materials to clients around the world. Our network spans across key markets in Asia, Europe, and the Americas.</p>
   
-    <div class="regions">
+    <div class="regions card-layout">
       <div class="region">
         <h3>Asia</h3>
         <ul>
           <li>India</li>
-          <li>UAE</li>
-          <li>Indonesia</li>
-          <li>Vietnam</li>
         </ul>
       </div>
       <div class="region">
         <h3>Europe</h3>
         <ul>
           <li>Germany</li>
-          <li>United Kingdom</li>
-          <li>France</li>
-          <li>Italy</li>
-        </ul>
-      </div>
-      <div class="region">
-        <h3>Middle East & Africa</h3>
-        <ul>
-          <li>Saudi Arabia</li>
-          <li>Oman</li>
-          <li>South Africa</li>
+          <li>Poland</li>
+          <li>Spain</li>
+          <li>Netherlands</li>
         </ul>
       </div>
       <div class="region">
         <h3>Americas</h3>
         <ul>
           <li>USA</li>
-          <li>Brazil</li>
           <li>Mexico</li>
+          <li>Canada</li>
+          <li>Brazil</li>
+          <li>Argentina</li>
         </ul>
       </div>
     </div>
   </div>
-  
+  <style>
+ /* --- CSS for Layout 2 (Grid) --- */
+.global-presence {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.global-presence h2 {
+  text-align: center;
+  color: #0056b3;
+  margin-bottom: 15px;
+}
+
+.global-presence p {
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.regions.grid-layout {
+  display: grid; /* Makes the regions grid items */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Creates flexible columns */
+  gap: 20px; /* Space between grid cells */
+  justify-items: center; /* Centers items horizontally within their grid cell */
+}
+
+.regions.grid-layout .region {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #f9f9f9;
+  width: 100%; /* Ensures the region takes full width of its grid cell */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+}
+
+.regions.grid-layout .region h3 {
+  color: #007bff;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.regions.grid-layout .region ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.regions.grid-layout .region ul li {
+  padding: 5px 0;
+  border-bottom: 1px dashed #eee;
+}
+
+.regions.grid-layout .region ul li:last-child {
+  border-bottom: none;
+}
+  </style>
     <!-- print button -->
 <div class="text-center my-4">
     <button onclick="window.print()" class="btn print-button">

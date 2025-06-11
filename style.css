@@ -384,7 +384,10 @@ p{
   
   #srch-bar {
     height: 32px;
+    color:white;
+    background-color: #04168E;
     width: 173px;
+    border-color: white;
     font-size: 14px;
     font-family: verdana;
     margin-right: 8px; /* Small space between input and button */
@@ -405,6 +408,10 @@ p{
   color: black;
   border-radius: 40px;
   
+}
+#srch-bar::placeholder {
+  color: white;
+  opacity: 1;
 }
 /* starts media query for website heading */
 @media (max-width: 600px) {
