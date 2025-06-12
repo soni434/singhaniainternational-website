@@ -340,25 +340,7 @@ text-decoration: underline;
     </div>
   </section>
   <!-- script for container -->
-  <script>
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-      counter.innerText = '0';
-      const updateCount = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / 200;
-  
-        if (count < target) {
-          counter.innerText = `${Math.ceil(count + increment)}`;
-          setTimeout(updateCount, 10);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCount();
-    });
-  </script>
+
 <style>
     .container p{
         color:darkgreen;
@@ -572,33 +554,7 @@ text-decoration: none;
     
     <!-- EmailJS Script -->
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        // Initialize EmailJS with your public key
-        emailjs.init("75FB0nHsOD4SFPb0k");
     
-        // Handle form submission
-        document.getElementById("newsletter-form").addEventListener("submit", function (e) {
-          e.preventDefault();
-    
-          // Log form data to debug and ensure correct data is sent
-          const formData = new FormData(this);
-          formData.forEach((value, key) => {
-            console.log(key, value); // This logs each form field and its value
-          });
-    
-          // Send the form data to EmailJS (sendForm)
-          emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
-            .then(function (response) {
-              alert("Subscribed Successfully!"); // Success message
-              console.log("Email sent successfully:", response);
-            }, function (error) {
-              alert("Something went wrong. Please try again."); // Error message
-              console.error("Error sending email:", error);
-            });
-        });
-      });
-    </script>
     </div>
 
   </div>
@@ -613,27 +569,6 @@ text-decoration: none;
 <button onclick="scrollToTop()" id="scrollUpBtn" class="btn btn-dark">
   <i class="fas fa-arrow-up"></i> <!-- Font Awesome Arrow Up Icon -->
 </button>
-<script>
-  // Get the button
-  var mybutton = document.getElementById("scrollUpBtn");
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
-  };
-
-  // When the user clicks on the button, scroll to the top of the document
-  function scrollToTop() {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth"
-    });
-  }
-</script>
 
 <style>
   /* Style for the scroll to top button */
@@ -667,4 +602,5 @@ text-decoration: none;
 </style>
 
 </body>
+<script src="script.js"></script>
 </html>

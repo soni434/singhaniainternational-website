@@ -259,7 +259,6 @@ p{
     transition: all 0.3s ease-in-out;
     border-radius: 6px;
     text-transform: uppercase;
-    
     margin-left: 5px;
     background-color: #04168E;
  
@@ -288,7 +287,7 @@ p{
     margin-top: 0.5rem;
     min-width: 220px;
    
-    background-color: #052899;
+    background-color: #04168E;
   }
   
   /* Individual dropdown items */
@@ -302,13 +301,13 @@ p{
   
 /* Change background color of the submenu */
 .dropdown-submenu .dropdown-menu {
-  background-color: navy; /* Change this to your desired color */
+  background-color:#04168E; /* Change this to your desired color */
 }
 
   /* Hover/focus effect on dropdown items */
   #group + .dropdown-menu .dropdown-item:hover,
   #group + .dropdown-menu .dropdown-item:focus {
-    background-color: #052899;
+    background-color: #04168E;
     color: RED;
   }
   /* /* THE GROUP MENU ENDS */
