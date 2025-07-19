@@ -94,6 +94,7 @@
             <li><a class="dropdown-item custom-dropdown-color" href="about-us.html"><i class="fas fa-info-circle me-2"></i> About us</a></li>
             <li><a class="dropdown-item custom-dropdown-color" href="philosophy.html"><i class="fas fa-book me-2"></i> Philosophy & Policies</a></li>
             <li><a class="dropdown-item custom-dropdown-color" href="mgt.html"><i class="fas fa-users-cog me-2"></i> Management</a></li>
+            <li><a class="dropdown-item custom-dropdown-color" href="gallery.html"><i class="fas fa-users-cog me-2"></i> Exhibition Gallery</a></li>
           </ul>
         </li>
 
@@ -419,12 +420,13 @@
 <div class="video-background" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    src="https://www.youtube.com/embed/hpvQKCIOn9I"
+    src="https://www.youtube.com/embed/joQ2Gnf0SMo"
     frameborder="0"
     allow="autoplay; encrypted-media"
     allowfullscreen
   ></iframe>
 </div>
+
 <style>
 .video-background {
   position: relative;
@@ -501,6 +503,88 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+<style>
+  .video-row-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .video-row {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding: 15px;
+  }
+
+  .video-frame {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 225px;
+    position: relative;
+  }
+
+  .video-frame iframe {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* 📱 Media Query for smaller screens */
+  @media (max-width: 768px) {
+    .video-row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .video-frame {
+      width: 90vw;
+      height: calc(90vw * 9 / 16); /* Maintain 16:9 aspect ratio */
+    }
+  }
+
+  .exhibition-heading-modern {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+</style>
+
+<h2 class="exhibition-heading-modern">Exhibition videos</h2>
+
+<!-- Wrapper to center the row -->
+<div class="video-row-wrapper">
+  <!-- Row of videos -->
+  <div class="video-row">
+    
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/vJwGIR-TFSs"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div class="video-frame">
+      <iframe
+        src="https://www.youtube.com/embed/2H_tJ7yfD8A"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+  </div>
+</div>
+
+    <!-- Add more videos as needed -->
+  </div>
+
+</div>
+
+
+
 <!-- print button -->
 <div class="text-center my-4">
   <button onclick="window.print()" class="btn print-button">
@@ -680,35 +764,6 @@
   </form>
 </div>
 
-<!-- EmailJS Script -->
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    // Initialize EmailJS with your public key
-    emailjs.init("75FB0nHsOD4SFPb0k");
-
-    // Handle form submission
-    document.getElementById("newsletter-form").addEventListener("submit", function (e) {
-      e.preventDefault();
-
-      // Log form data to debug and ensure correct data is sent
-      const formData = new FormData(this);
-      formData.forEach((value, key) => {
-        console.log(key, value); // This logs each form field and its value
-      });
-
-      // Send the form data to EmailJS (sendForm)
-      emailjs.sendForm("service_8s7yqvw", "template_12gjopr", this)
-        .then(function (response) {
-          alert("Subscribed Successfully!"); // Success message
-          console.log("Email sent successfully:", response);
-        }, function (error) {
-          alert("Something went wrong. Please try again."); // Error message
-          console.error("Error sending email:", error);
-        });
-    });
-  });
-</script>
 
 <style>
  .subscribe-message {
